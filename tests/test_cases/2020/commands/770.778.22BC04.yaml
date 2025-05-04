@@ -1,0 +1,60 @@
+command_id: 770.778.22BC04
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC04303770
+    778216A00000E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04303770
+    778216A00040E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04303770
+    778216A04000E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04303770
+    778216A08000E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04303770
+    778216A08040E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04303770
+    778216A0C000E02AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04303770
+    778216A0C000E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04303770
+    778216A0C040E42AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
