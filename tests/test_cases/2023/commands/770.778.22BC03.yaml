@@ -4,6 +4,30 @@ extended_addressing_enabled: false
 test_cases:
 - response: |-
     778100B62BC03FDEE20
+    778216200000000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 0
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    778216200600000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 1
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 0
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
     778216200620000AAAA
   expected_values:
     KIA_BELT_DRIVER: 1
@@ -22,6 +46,18 @@ test_cases:
     KIA_BELT_PASSENGER: 0
     KIA_DOOR_FL: 0
     KIA_DOOR_FR: 0
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821620A000000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 1
     KIA_DOOR_RL: 0
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
@@ -57,6 +93,54 @@ test_cases:
     KIA_BELT_DRIVER: 1
     KIA_BELT_PASSENGER: 0
     KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 1
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821620A620000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 1
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 1
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821621A000000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 1
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 1
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821622A000000AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 1
+    KIA_DOOR_FR: 1
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_TRUNK: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821622A000400AAAA
+  expected_values:
+    KIA_BELT_DRIVER: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 1
     KIA_DOOR_FR: 1
     KIA_DOOR_RL: 0
     KIA_DOOR_RR: 0
