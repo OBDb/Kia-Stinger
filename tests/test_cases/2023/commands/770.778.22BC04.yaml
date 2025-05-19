@@ -10,9 +10,8 @@ test_cases:
     KIA_BELT_RM: 1
     KIA_BELT_RR: 1
     KIA_GEAR_R: 0
-    KIA_LOCK_FL: 0
-    KIA_LOCK_FR: 0
-    KIA_REVERSE_GEAR: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
 - response: |-
     778100B62BC04332770
     778216200000E42AAAA
@@ -21,9 +20,8 @@ test_cases:
     KIA_BELT_RM: 1
     KIA_BELT_RR: 1
     KIA_GEAR_R: 0
-    KIA_LOCK_FL: 0
-    KIA_LOCK_FR: 0
-    KIA_REVERSE_GEAR: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
 - response: |-
     778100B62BC04332770
     778216208000E42AAAA
@@ -32,9 +30,8 @@ test_cases:
     KIA_BELT_RM: 1
     KIA_BELT_RR: 1
     KIA_GEAR_R: 0
-    KIA_LOCK_FL: 0
-    KIA_LOCK_FR: 0
-    KIA_REVERSE_GEAR: 1
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 0
 - response: |-
     778100B62BC04332770
     77821620C000E42AAAA
@@ -43,6 +40,5 @@ test_cases:
     KIA_BELT_RM: 1
     KIA_BELT_RR: 1
     KIA_GEAR_R: 0
-    KIA_LOCK_FL: 0
-    KIA_LOCK_FR: 0
-    KIA_REVERSE_GEAR: 1
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 1
