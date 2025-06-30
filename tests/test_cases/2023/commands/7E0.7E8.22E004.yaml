@@ -1,102 +1,100 @@
 command_id: 7E0.7E8.22E004
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
+- expected_values:
+    KIA_22E004: 100
+  response: |-
     7E8101A62E004FFFF07
     7E82100F0D8C173F172
     7E822F810F080B0D0F0
     7E823003030111000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100F8DCC170F172
     7E822F810F080B0D0F0
     7E823003030111000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100F9DCC170F172
     7E822FA10F080B0D8F1
     7E823003030101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
+    7E8101A62E004FFFF07
+    7E82100FCDDC170F276
+    7E822FA10F080B0D4F0
+    7E823003030101000AA
+- expected_values:
+    KIA_22E004: 100
+  response: |-
+    7E8101A62E004FFFF07
+    7E82100FDD0C173F076
+    7E822FA10F088B0D8F3
+    7E823003030101000AA
+- expected_values:
+    KIA_22E004: 100
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C177F476
     7E822FA10F080B0D8F3
     7E823003030101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C970F476
     7E822FA10F080B0D8F3
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C970F476
     7E822FA11F080B3D8F3
     7E823003232101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C970F476
     7E822FB10F080BBD9F7
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C977F476
     7E822FA10F480B0D8F3
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD0C977F476
     7E822FB10F080B0D8FB
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
-    7E82100FDD1C173F076
-    7E822FA10F088B0D8F3
-    7E823003030101000AA
-  expected_values:
-    KIA_22E004: 100
-- response: |-
-    7E8101A62E004FFFF07
-    7E82100FDD1C970F876
+    7E82100FDD0C977F876
     7E822FA10F080B0D8F3
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDD1C977F276
     7E822FB10F080BBDDF7
     7E823003032101000AA
-  expected_values:
+- expected_values:
     KIA_22E004: 100
-- response: |-
-    7E8101A62E004FFFF07
-    7E82100FDDDC173F172
-    7E822FA10F080B0D8F3
-    7E823003030101000AA
-  expected_values:
-    KIA_22E004: 100
-- response: |-
+  response: |-
     7E8101A62E004FFFF07
     7E82100FDDDC977F276
     7E822FE10F080B0DCF7
     7E823003032101000AA
-  expected_values:
-    KIA_22E004: 100
