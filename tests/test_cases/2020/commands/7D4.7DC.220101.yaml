@@ -1,129 +1,81 @@
 command_id: 7D4.7DC.220101
 test_cases:
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 5.12
-    KIA_BMS_SOC: 1.5
+- expected_values: {}
   response: |-
     7DC1012620101585FFA
     7DC2100030000020000
     7DC220011102F01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201015B6100
     7DC21FFE60000000000
     7DC220011102001AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 0
+- expected_values: {}
   response: |-
     7DC10126201015D6200
     7DC2100000000000000
     7DC220000000001AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 15.36
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201016065F5
     7DC21FFF90000060000
     7DC220011102001AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 0
+- expected_values: {}
   response: |-
     7DC1012620101636600
     7DC2100000000000000
     7DC220011110001AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 8.5
+- expected_values: {}
   response: |-
     7DC10126201016A6CFF
     7DC2100110000000000
     7DC220011103101AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 655.29
-    KIA_BMS_DISCHG_PWR: 5.12
-    KIA_BMS_SOC: 87.5
+- expected_values: {}
   response: |-
     7DC10126201017876F9
     7DC2101AFFFF9020000
     7DC220000102501AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 43.5
+- expected_values: {}
   response: |-
     7DC10126201017B0000
     7DC2100570000000000
     7DC220000002E01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 4.47
-    KIA_BMS_DISCHG_PWR: 647.74
-    KIA_BMS_SOC: 8
+- expected_values: {}
   response: |-
     7DC10126201017C7A08
     7DC21FF1001BFFD0600
     7DC224110102301AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0.63
-    KIA_BMS_SOC: 15.5
+- expected_values: {}
   response: |-
     7DC1012620101807C0A
     7DC21001F0000003F02
     7DC227510102C01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 1.02
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC1012620101817DF8
     7DC21FFF80000006603
     7DC22FF10102F01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 48
+- expected_values: {}
   response: |-
     7DC10126201018C8A00
     7DC21FF600000000000
     7DC2200101027010000
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 654.22
-    KIA_BMS_SOC: 16
+- expected_values: {}
   response: |-
     7DC10126201018E8B0A
     7DC2100200000FF8E05
     7DC229010102501AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 654.29
-    KIA_BMS_SOC: 24
+- expected_values: {}
   response: |-
     7DC10126201018F8B10
     7DC2100300000FF9505
     7DC22D210101D01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0.17
-    KIA_BMS_SOC: 8.5
+- expected_values: {}
   response: |-
     7DC1012620101908D01
     7DC2100110000001100
     7DC22A210105001AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 3.02
-    KIA_BMS_DISCHG_PWR: 81.94
-    KIA_BMS_SOC: 79.5
+- expected_values: {}
   response: |-
     7DC10126201019794F1
     7DC21F39F012E200200

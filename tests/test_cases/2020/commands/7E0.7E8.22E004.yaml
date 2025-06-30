@@ -1,140 +1,120 @@
 command_id: 7E0.7E8.22E004
 test_cases:
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F0D0C070F172
     7E822F010F88030D0F0
     7E823F030F01110AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F0D0C073F170
     7E822F010F88030D0F0
     7E823F030F01110AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F8D0C070F172
     7E822F010F88030D0F0
     7E823F030F01010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F8D1C077F276
     7E822FA10F88030D4F0
     7E823F030F01010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F9DCC470F176
     7E822FA10F08030D8F3
     7E823F330F01010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100F9DCC473F176
     7E822FA10F08830D8F3
     7E823F330F01010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FBD0C073F172
     7E822F010FC8030D0F0
     7E823F030F01010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C070F476
     7E822FA10F08030D8F3
     7E823F330FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C470F476
     7E822FA10F08030D8F3
     7E823F330F01011AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C870F276
     7E822FB10F08030DCF7
     7E823F730F51010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C870F476
     7E822FA10F08035D9F7
     7E823F730FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C870F476
     7E822FA11F08030D8F7
     7E823F732FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C870F477
     7E822FA10F08030D8F3
     7E823F330FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0C870F876
     7E822FA10F08030D8F3
     7E823F330FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD0CC70F476
     7E822FA10F08030D8F3
     7E823F330F51010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD1C470F076
     7E822FA10F08030D8F3
     7E823F330FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD1C870F276
     7E822FE10F08030DCF3
     7E823F330F51010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDD1C877F076
     7E822FA11F08030D8F7
     7E823F733FF1010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FDDDC070F276
     7E822F810F88030D4F0
     7E823F030F51010AAAA
-- expected_values:
-    KIA_22E004: 100
+- expected_values: {}
   response: |-
     7E8101962E004FFFF03
     7E82100FFDCC070F172

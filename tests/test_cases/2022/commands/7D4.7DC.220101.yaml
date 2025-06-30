@@ -1,81 +1,51 @@
 command_id: 7D4.7DC.220101
 test_cases:
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018C8A00
     7DC21FFF90000000000
     7DC220010102A01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018E8C00
     7DC21FFFB0000000000
     7DC220010102801AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018F8C00
     7DC21FFF90000000000
     7DC220010102901AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018F8C00
     7DC21FFF90000000000
     7DC220010102B01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018F8C00
     7DC21FFF90000000000
     7DC220010102C01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018F8C00
     7DC21FFFB0000000000
     7DC220010102901AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC10126201018F8C00
     7DC21FFFB0000000000
     7DC220010102A01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC1012620101908C00
     7DC21FFF90000000000
     7DC220010102B01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC1012620101908C00
     7DC21FFF90000000000
     7DC220010102C01AAAA
-- expected_values:
-    KIA_BMS_CHG_PWR: 0
-    KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_SOC: 100
+- expected_values: {}
   response: |-
     7DC1012620101908D00
     7DC21FFF90000000000

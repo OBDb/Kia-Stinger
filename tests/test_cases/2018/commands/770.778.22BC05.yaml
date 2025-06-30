@@ -1,27 +1,32 @@
 command_id: 770.778.22BC05
 test_cases:
 - expected_values:
-    KIA_HAZARD_SW: 0
+    STINGER_HAZARD_SW: 0
+    STINGER_HL_SW: 0
   response: |-
     778100B62BC050F1724
     778210000200000AAAA
 - expected_values:
-    KIA_HAZARD_SW: 0
+    STINGER_HAZARD_SW: 0
+    STINGER_HL_SW: 0
   response: |-
     778100B62BC050F1724
     778210000280000AAAA
 - expected_values:
-    KIA_HAZARD_SW: 80
+    STINGER_HAZARD_SW: 80.0
+    STINGER_HL_SW: 0
   response: |-
     778100B62BC050F1724
     778210050200000AAAA
 - expected_values:
-    KIA_HAZARD_SW: 160
+    STINGER_HAZARD_SW: 160.0
+    STINGER_HL_SW: 0
   response: |-
     778100B62BC050F1724
     7782100A0200000AAAA
 - expected_values:
-    KIA_HAZARD_SW: 240
+    STINGER_HAZARD_SW: 240.0
+    STINGER_HL_SW: 0
   response: |-
     778100B62BC050F1724
     7782100F0600000AAAA

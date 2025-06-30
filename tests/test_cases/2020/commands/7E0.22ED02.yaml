@@ -1,8 +1,7 @@
 command_id: 7E0.22ED02
 test_cases:
 - expected_values:
-    KIA_EOT: 94
-    KIA_EOT_V2: 94
+    STINGER_EOT_V2: 94.0
   response: |-
     7E8102A62ED02EFFDF8
     7E82100005E5EFF7FFD
@@ -12,8 +11,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 91
-    KIA_EOT_V2: 91
+    STINGER_EOT_V2: 91.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A6F5DFF8DFE
@@ -23,8 +21,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 90
-    KIA_EOT_V2: 90
+    STINGER_EOT_V2: 90.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A6F5DFF8DFE
@@ -34,8 +31,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 92
-    KIA_EOT_V2: 92
+    STINGER_EOT_V2: 92.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A6F5DFF90FD
@@ -45,8 +41,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 91
-    KIA_EOT_V2: 91
+    STINGER_EOT_V2: 91.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705CFF8EFE
@@ -56,8 +51,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 92
-    KIA_EOT_V2: 92
+    STINGER_EOT_V2: 92.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705DFF8BFD
@@ -67,8 +61,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 92
-    KIA_EOT_V2: 92
+    STINGER_EOT_V2: 92.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705DFF8CFD
@@ -78,8 +71,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 92
-    KIA_EOT_V2: 92
+    STINGER_EOT_V2: 92.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705DFF8DFD
@@ -89,8 +81,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 92
-    KIA_EOT_V2: 92
+    STINGER_EOT_V2: 92.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705DFF8EFD
@@ -100,8 +91,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 94
-    KIA_EOT_V2: 94
+    STINGER_EOT_V2: 94.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705EFF8CFD
@@ -111,8 +101,7 @@ test_cases:
     7E825FFFFFFFFFFFFFF
     7E826FF555555555555
 - expected_values:
-    KIA_EOT: 93
-    KIA_EOT_V2: 93
+    STINGER_EOT_V2: 93.0
   response: |-
     7E8102A62ED02EFFDF8
     7E821001A705EFF8EFD
