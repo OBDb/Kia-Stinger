@@ -1,6 +1,15 @@
 command_id: 7E0.0132
 test_cases:
 - expected_values:
+    EVAP_VP: 0.17875
+  response: 7E804413202CB
+- expected_values:
+    EVAP_VP: -0.37525
+  response: 7E8044132FA23
+- expected_values:
+    EVAP_VP: -0.14675
+  response: 7E8044132FDB5
+- expected_values:
     EVAP_VP: -0.06525
   response: 7E8044132FEFB
 - expected_values:
