@@ -72,6 +72,8 @@ supported_commands_by_ecu:
   "7E2":
   - 7E2.7EA.22E004:KIA_VPWR_V3
 unsupported_commands_by_ecu:
+  "744":
+  - 744.74C.22E001|fc=1:KIA_DC_CHRG_STATE
   "770":
   - 770.778.22BC05:KIA_HAZARD_SW,KIA_HL_SW
   - 770.778.22BC07:KIA_DEFOG_LIGHT
