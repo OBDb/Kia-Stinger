@@ -1,21 +1,25 @@
 command_id: 770.778.22BC08
 test_cases:
 - expected_values:
+    KIA_TURN_L: 0
     KIA_TURN_R: 0
   response: |-
     778100B62BC0800709C
     778218000040100AAAA
 - expected_values:
+    KIA_TURN_L: 0
     KIA_TURN_R: 0
   response: |-
     778100B62BC0800779C
     778218400000000AAAA
 - expected_values:
+    KIA_TURN_L: 0
     KIA_TURN_R: 0
   response: |-
     778100B62BC0800779C
     7782184000E2100AAAA
 - expected_values:
+    KIA_TURN_L: 0
     KIA_TURN_R: 0
   response: |-
     778100B62BC0800779C
