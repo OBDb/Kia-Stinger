@@ -4,4 +4,24 @@ test_cases:
     KIA_BRAKE_LIGHT: 0
   response: |-
     778100B62BC06B48000
+    778216D00000000AAAA
+- expected_values:
+    KIA_BRAKE_LIGHT: 0
+  response: |-
+    778100B62BC06B48000
     778216D00000080AAAA
+- expected_values:
+    KIA_BRAKE_LIGHT: 0
+  response: |-
+    778100B62BC06B48000
+    778216D00010080AAAA
+- expected_values:
+    KIA_BRAKE_LIGHT: 45
+  response: |-
+    778100B62BC06B48000
+    778216D2D000080AAAA
+- expected_values:
+    KIA_BRAKE_LIGHT: 45
+  response: |-
+    778100B62BC06B48000
+    778216D2D010080AAAA
