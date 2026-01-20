@@ -1,6 +1,9 @@
 command_id: 7E0.0158
 test_cases:
 - expected_values:
+    LGSO2FT2: -3.90625
+  response: 7E80341587B
+- expected_values:
     LGSO2FT2: -1.5625
   response: 7E80341587E
 - expected_values:

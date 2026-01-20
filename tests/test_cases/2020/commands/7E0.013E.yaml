@@ -19,6 +19,9 @@ test_cases:
     CATEMP12: 427.4
   response: 7E804413E1242
 - expected_values:
+    CATEMP12: 470.1
+  response: 7E804413E13ED
+- expected_values:
     CATEMP12: 504.9
   response: 7E804413E1549
 - expected_values:
