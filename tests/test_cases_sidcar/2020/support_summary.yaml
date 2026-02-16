@@ -1,0 +1,401 @@
+vin: KNAE55LC2L6081446
+model_year: 2020
+parsed_rows: 600000
+decoded_rows: 510550
+commands_written: 61
+commands:
+- command_id: 770.778.22BC03
+  test_cases: 43
+  signal_count: 12
+  signals:
+  - STINGER_BELT_DRIV
+  - STINGER_BELT_DRIVER
+  - STINGER_BELT_PASS
+  - STINGER_BELT_PASSENGER
+  - STINGER_DEFOG_SW
+  - STINGER_DOOR_FL
+  - STINGER_DOOR_FR
+  - STINGER_DOOR_RL
+  - STINGER_DOOR_RR
+  - STINGER_HANDBRAKE
+  - STINGER_HOOD
+  - STINGER_TRUNK
+- command_id: 770.778.22BC04
+  test_cases: 7
+  signal_count: 6
+  signals:
+  - STINGER_BELT_RL
+  - STINGER_BELT_RM
+  - STINGER_BELT_RR
+  - STINGER_LOCK_FL
+  - STINGER_LOCK_FR
+  - STINGER_REVERSE_GEAR
+- command_id: 770.778.22BC05
+  test_cases: 5
+  signal_count: 2
+  signals:
+  - STINGER_HAZARD_SW
+  - STINGER_HL_SW
+- command_id: 770.778.22BC07
+  test_cases: 12
+  signal_count: 1
+  signals:
+  - STINGER_DEFOG_LIGHT
+- command_id: 770.778.22BC08
+  test_cases: 12
+  signal_count: 1
+  signals:
+  - STINGER_TURN_L
+- command_id: 770.778.22BC09
+  test_cases: 3
+  signal_count: 2
+  signals:
+  - STINGER_HL_HIGH
+  - STINGER_HL_LOW
+- command_id: 7A0.7A8.22C00B|fc=1
+  test_cases: 50
+  signal_count: 16
+  signals:
+  - STINGER_TB_FL
+  - STINGER_TB_FR
+  - STINGER_TB_RL
+  - STINGER_TB_RR
+  - STINGER_TP_FL
+  - STINGER_TP_FR
+  - STINGER_TP_RL
+  - STINGER_TP_RR
+  - STINGER_TT_FL
+  - STINGER_TT_FR
+  - STINGER_TT_RL
+  - STINGER_TT_RR
+  - STINGER_TW_FL
+  - STINGER_TW_FR
+  - STINGER_TW_RL
+  - STINGER_TW_RR
+- command_id: 7B3.7BB.220100|fc=1
+  test_cases: 50
+  signal_count: 3
+  signals:
+  - STINGER_TEMP_EXT
+  - STINGER_TEMP_INT
+  - STINGER_VSS
+- command_id: 7C6.7CE.22B002|fc=1
+  test_cases: 50
+  signal_count: 4
+  signals:
+  - STINGER_CLUSTER_VOLTAGE
+  - STINGER_FLI_VOL
+  - STINGER_ODO_KM
+  - STINGER_ODO_MI
+- command_id: 7E0.0101
+  test_cases: 1
+  signal_count: 25
+  signals:
+  - ACRF_RDY
+  - ACRF_SUP
+  - AIR_RDY
+  - AIR_SUP
+  - CAT_RDY
+  - CAT_SUP
+  - CCM_RDY
+  - CCM_SUP
+  - CIM_SUP
+  - DTC_CNT
+  - EGR_RDY
+  - EGR_SUP
+  - EVAP_RDY
+  - EVAP_SUP
+  - FUEL_RDY
+  - FUEL_SUP
+  - HCAT_RDY
+  - HCAT_SUP
+  - HTR_RDY
+  - HTR_SUP
+  - MIL
+  - MIS_RDY
+  - MIS_SUP
+  - O2S_RDY
+  - O2S_SUP
+- command_id: 7E0.0103
+  test_cases: 1
+  signal_count: 2
+  signals:
+  - FUELSYS1
+  - FUELSYS2
+- command_id: 7E0.0104
+  test_cases: 16
+  signal_count: 1
+  signals:
+  - LOAD_PCT
+- command_id: 7E0.0105
+  test_cases: 9
+  signal_count: 1
+  signals:
+  - ECT
+- command_id: 7E0.0106
+  test_cases: 8
+  signal_count: 1
+  signals:
+  - SHRTFT1
+- command_id: 7E0.0107
+  test_cases: 6
+  signal_count: 1
+  signals:
+  - LONGFT1
+- command_id: 7E0.0108
+  test_cases: 5
+  signal_count: 1
+  signals:
+  - SHRTFT2
+- command_id: 7E0.0109
+  test_cases: 6
+  signal_count: 1
+  signals:
+  - LONGFT2
+- command_id: 7E0.010B
+  test_cases: 10
+  signal_count: 1
+  signals:
+  - MAP
+- command_id: 7E0.010C
+  test_cases: 47
+  signal_count: 1
+  signals:
+  - RPM
+- command_id: 7E0.010D
+  test_cases: 50
+  signal_count: 1
+  signals:
+  - VSS
+- command_id: 7E0.010E
+  test_cases: 20
+  signal_count: 1
+  signals:
+  - SPARKADV
+- command_id: 7E0.010F
+  test_cases: 7
+  signal_count: 1
+  signals:
+  - IAT
+- command_id: 7E0.0111
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - TP
+- command_id: 7E0.011C
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - OBDSUP
+- command_id: 7E0.011F
+  test_cases: 7
+  signal_count: 1
+  signals:
+  - RUNTM
+- command_id: 7E0.0121
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - MIL_DIST
+- command_id: 7E0.012E
+  test_cases: 23
+  signal_count: 1
+  signals:
+  - EVAP_PCT
+- command_id: 7E0.012F
+  test_cases: 50
+  signal_count: 1
+  signals:
+  - FLI
+- command_id: 7E0.0130
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - WARM_UPS
+- command_id: 7E0.0131
+  test_cases: 50
+  signal_count: 1
+  signals:
+  - CLR_DIST
+- command_id: 7E0.0132
+  test_cases: 17
+  signal_count: 1
+  signals:
+  - EVAP_VP
+- command_id: 7E0.0133
+  test_cases: 2
+  signal_count: 1
+  signals:
+  - BARO
+- command_id: 7E0.013C
+  test_cases: 41
+  signal_count: 1
+  signals:
+  - CATEMP11
+- command_id: 7E0.013D
+  test_cases: 43
+  signal_count: 1
+  signals:
+  - CATEMP21
+- command_id: 7E0.013E
+  test_cases: 42
+  signal_count: 1
+  signals:
+  - CATEMP12
+- command_id: 7E0.013F
+  test_cases: 50
+  signal_count: 1
+  signals:
+  - CATEMP22
+- command_id: 7E0.0141
+  test_cases: 1
+  signal_count: 23
+  signals:
+  - ACRFCMPL
+  - ACRF_ENA
+  - AIR_CMPL
+  - AIR_ENA
+  - CAT_CMPL
+  - CAT_ENA
+  - CCM_CMPL
+  - CCM_ENA
+  - CIM_SUP_FLAG
+  - EGR_CMPL
+  - EGR_ENA
+  - EVAPCMPL
+  - EVAP_ENA
+  - FUEL_CMPL
+  - FUEL_ENA
+  - HCATCMPL
+  - HCAT_ENA
+  - HTR_CMPL
+  - HTR_ENA
+  - MIS_CMPL
+  - MIS_ENA
+  - O2S_CMPL
+  - O2S_ENA
+- command_id: 7E0.0142
+  test_cases: 8
+  signal_count: 1
+  signals:
+  - VPWR
+- command_id: 7E0.0143
+  test_cases: 9
+  signal_count: 1
+  signals:
+  - LOAD_ABS
+- command_id: 7E0.0144
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - EQ_RAT
+- command_id: 7E0.0145
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - TP_R
+- command_id: 7E0.0146
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - AAT
+- command_id: 7E0.0147
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - TP_B
+- command_id: 7E0.0149
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - APP_D
+- command_id: 7E0.014A
+  test_cases: 2
+  signal_count: 1
+  signals:
+  - APP_E
+- command_id: 7E0.014C
+  test_cases: 8
+  signal_count: 1
+  signals:
+  - TAC_PCT
+- command_id: 7E0.014D
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - MIL_TIME
+- command_id: 7E0.014E
+  test_cases: 2
+  signal_count: 1
+  signals:
+  - CLR_TIME
+- command_id: 7E0.0151
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - FUEL_TYP
+- command_id: 7E0.0155
+  test_cases: 9
+  signal_count: 1
+  signals:
+  - STSO2FT1
+- command_id: 7E0.0156
+  test_cases: 4
+  signal_count: 1
+  signals:
+  - LGSO2FT1
+- command_id: 7E0.0157
+  test_cases: 6
+  signal_count: 1
+  signals:
+  - STSO2FT2
+- command_id: 7E0.0158
+  test_cases: 3
+  signal_count: 1
+  signals:
+  - LGSO2FT2
+- command_id: 7E0.0159
+  test_cases: 23
+  signal_count: 1
+  signals:
+  - FRP_ABS
+- command_id: 7E0.0162
+  test_cases: 5
+  signal_count: 1
+  signals:
+  - TQ_ACT
+- command_id: 7E0.0163
+  test_cases: 1
+  signal_count: 1
+  signals:
+  - TQ_REF
+- command_id: 7E0.018E
+  test_cases: 4
+  signal_count: 1
+  signals:
+  - TQ_FR
+- command_id: 7E0.019D
+  test_cases: 4
+  signal_count: 2
+  signals:
+  - FUEL_RATE_ALT
+  - VFUEL_RATE
+- command_id: 7E0.019E
+  test_cases: 4
+  signal_count: 1
+  signals:
+  - EXH_RATE
+- command_id: 7E0.01A6
+  test_cases: 50
+  signal_count: 1
+  signals:
+  - ODO
+- command_id: 7E0.22E021
+  test_cases: 50
+  signal_count: 5
+  signals:
+  - STINGER_TURBO_BOOST
+  - STINGER_WG_DUTY
+  - STINGER_WG_POSITION
+  - STINGER_WG_SETPOINT
+  - STINGER_WG_VOLTAGE

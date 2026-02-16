@@ -1,0 +1,71 @@
+command_id: 7E0.0159
+test_cases:
+- response: 7E80441590214
+  expected_values:
+    FRP_ABS: 5320
+- response: 7E8044159020D
+  expected_values:
+    FRP_ABS: 5250
+- response: 7E8044159020C
+  expected_values:
+    FRP_ABS: 5240
+- response: 7E8044159020B
+  expected_values:
+    FRP_ABS: 5230
+- response: 7E80441590212
+  expected_values:
+    FRP_ABS: 5300
+- response: 7E80441590215
+  expected_values:
+    FRP_ABS: 5330
+- response: 7E8044159020A
+  expected_values:
+    FRP_ABS: 5220
+- response: 7E8044159023A
+  expected_values:
+    FRP_ABS: 5700
+- response: 7E80441590234
+  expected_values:
+    FRP_ABS: 5640
+- response: 7E80441590238
+  expected_values:
+    FRP_ABS: 5680
+- response: 7E80441590236
+  expected_values:
+    FRP_ABS: 5660
+- response: 7E80441590237
+  expected_values:
+    FRP_ABS: 5670
+- response: 7E80441590239
+  expected_values:
+    FRP_ABS: 5690
+- response: 7E804415902BB
+  expected_values:
+    FRP_ABS: 6990
+- response: 7E804415902B9
+  expected_values:
+    FRP_ABS: 6970
+- response: 7E804415902BA
+  expected_values:
+    FRP_ABS: 6980
+- response: 7E804415902BC
+  expected_values:
+    FRP_ABS: 7000
+- response: 7E8044159023B
+  expected_values:
+    FRP_ABS: 5710
+- response: 7E80441590230
+  expected_values:
+    FRP_ABS: 5600
+- response: 7E8044159022E
+  expected_values:
+    FRP_ABS: 5580
+- response: 7E80441590233
+  expected_values:
+    FRP_ABS: 5630
+- response: 7E80441590225
+  expected_values:
+    FRP_ABS: 5490
+- response: 7E80441590227
+  expected_values:
+    FRP_ABS: 5510

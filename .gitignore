@@ -4,3 +4,5 @@ __pycache__
 .claude/settings.local.json
 tests/*.py
 .vscode/*.json
+Data/
+Data/

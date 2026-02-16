@@ -1,0 +1,20 @@
+command_id: 7E0.0157
+test_cases:
+- response: 7E803415787
+  expected_values:
+    STSO2FT2: 5.46875
+- response: 7E803415780
+  expected_values:
+    STSO2FT2: 0
+- response: 7E803415781
+  expected_values:
+    STSO2FT2: 0.78125
+- response: 7E803415783
+  expected_values:
+    STSO2FT2: 2.34375
+- response: 7E803415784
+  expected_values:
+    STSO2FT2: 3.125
+- response: 7E803415782
+  expected_values:
+    STSO2FT2: 1.5625

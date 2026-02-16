@@ -47,9 +47,9 @@
     {"id": "STINGER_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front left tire temperature"},
     {"id": "STINGER_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
     {"id": "STINGER_TT_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front right tire temperature"},
-    {"id": "STINGER_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear right tire pressure",      "suggestedMetric": "rearRightTirePressure"},
+    {"id": "STINGER_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
     {"id": "STINGER_TT_RR", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear right tire temperature"},
-    {"id": "STINGER_TP_RL", "path": "Tires", "fmt": {"bix": 128, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear left tire pressure",     "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "STINGER_TP_RL", "path": "Tires", "fmt": {"bix": 128, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
     {"id": "STINGER_TT_RL", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear left tire temperature"},
     {"id": "STINGER_TB_FL", "path": "Tires", "name": "Front left tire battery", "fmt": {"bix": 48, "len": 8, "map": {
           "0": { "description": ">3 V",        "value": "3V+" },
@@ -124,6 +124,71 @@
     {"id": "STINGER_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "STINGER_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_220104_RAW_01", "path": "ECU.Raw", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 1"},
+    {"id": "STINGER_220104_RAW_02", "path": "ECU.Raw", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 2"},
+    {"id": "STINGER_220104_RAW_03", "path": "ECU.Raw", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 3"},
+    {"id": "STINGER_220104_RAW_04", "path": "ECU.Raw", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 4"},
+    {"id": "STINGER_220104_RAW_05", "path": "ECU.Raw", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 5"},
+    {"id": "STINGER_220104_RAW_06", "path": "ECU.Raw", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 6"},
+    {"id": "STINGER_220104_RAW_07", "path": "ECU.Raw", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 7"},
+    {"id": "STINGER_220104_RAW_08", "path": "ECU.Raw", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x220104 raw byte 8"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_BMS_SOC",            "path": "Battery", "fmt": {"bix": 32, "len": 8,  "max": 100,                 "div": 2,                 "unit": "percent"   }, "name": "State of charge",                     "suggestedMetric": "stateOfCharge"},
+    {"id": "STINGER_BMS_CHG_PWR",        "path": "Battery", "fmt": {"bix": 40, "len": 16, "max": 655.35,              "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
+    {"id": "STINGER_BMS_DISCHG_PWR",     "path": "Battery", "fmt": {"bix": 56, "len": 16, "max": 655.35,              "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "STINGER_MDPS_MOTOR_CURRENT", "path": "Engine",  "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,             "sign": true, "unit": "amps"      }, "name": "Motor-driven power steering current"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "00"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_0100_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x00 support bitmap byte A"},
+    {"id": "STINGER_PID_0100_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x00 support bitmap byte B"},
+    {"id": "STINGER_PID_0100_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x00 support bitmap byte C"},
+    {"id": "STINGER_PID_0100_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x00 support bitmap byte D"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "20"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_0120_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x20 support bitmap byte A"},
+    {"id": "STINGER_PID_0120_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x20 support bitmap byte B"},
+    {"id": "STINGER_PID_0120_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x20 support bitmap byte C"},
+    {"id": "STINGER_PID_0120_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x20 support bitmap byte D"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "34"}, "freq": 1,
+  "signals": [
+    {"id": "LAMBDA11_CURRENT", "path": "Emissions", "fmt": {           "len": 16, "max": 1.99,              "div": 32768,              "unit": "scalar"    }, "name": "Lambda sensor 1, equivalence ratio"},
+    {"id": "O2S11_CURRENT",    "path": "Emissions", "fmt": {"bix": 16, "len": 16, "max": 128,  "min": -128, "div": 256,   "add": -128, "unit": "milliamps" }, "name": "O2 sensor 1 current"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "40"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_0140_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x40 support bitmap byte A"},
+    {"id": "STINGER_PID_0140_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x40 support bitmap byte B"},
+    {"id": "STINGER_PID_0140_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x40 support bitmap byte C"},
+    {"id": "STINGER_PID_0140_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x40 support bitmap byte D"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "60"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_0160_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x60 support bitmap byte A"},
+    {"id": "STINGER_PID_0160_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x60 support bitmap byte B"},
+    {"id": "STINGER_PID_0160_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x60 support bitmap byte C"},
+    {"id": "STINGER_PID_0160_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x60 support bitmap byte D"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "80"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_0180_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x80 support bitmap byte A"},
+    {"id": "STINGER_PID_0180_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x80 support bitmap byte B"},
+    {"id": "STINGER_PID_0180_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x80 support bitmap byte C"},
+    {"id": "STINGER_PID_0180_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0x80 support bitmap byte D"}
+  ]},
+{ "hdr": "7E0", "cmd": {"01": "A0"}, "freq": 5,
+  "signals": [
+    {"id": "STINGER_PID_01A0_RAW_A", "path": "OBD", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0xA0 support bitmap byte A"},
+    {"id": "STINGER_PID_01A0_RAW_B", "path": "OBD", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0xA0 support bitmap byte B"},
+    {"id": "STINGER_PID_01A0_RAW_C", "path": "OBD", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0xA0 support bitmap byte C"},
+    {"id": "STINGER_PID_01A0_RAW_D", "path": "OBD", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "PID 0xA0 support bitmap byte D"}
+  ]},
 { "hdr": "7E0", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "years": [2019, 2021], "from": 2024 },
   "signals": [
     {"id": "STINGER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
@@ -131,6 +196,62 @@
     {"id": "STINGER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
     {"id": "STINGER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
     {"id": "STINGER_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "E001"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_22E001_RAW_01",     "path": "ECU.Raw",    "fmt": {"bix": 24, "len": 8, "max": 255,                                   "unit": "scalar" }, "name": "0x22E001 raw byte 1"},
+    {"id": "STINGER_22E001_VPWR_EST_A", "path": "Electrical", "fmt": {"bix": 32, "len": 8, "max": 18,  "mul": 0.054399, "add": 2.941113, "unit": "volts"  }, "name": "Estimated system voltage from 0x22E001 byte 2 (high confidence)"},
+    {"id": "STINGER_22E001_RAW_03",     "path": "ECU.Raw",    "fmt": {"bix": 40, "len": 8, "max": 255,                                   "unit": "scalar" }, "name": "0x22E001 raw byte 3"},
+    {"id": "STINGER_22E001_RAW_04",     "path": "ECU.Raw",    "fmt": {"bix": 48, "len": 8, "max": 255,                                   "unit": "scalar" }, "name": "0x22E001 raw byte 4"},
+    {"id": "STINGER_22E001_RAW_05",     "path": "ECU.Raw",    "fmt": {"bix": 56, "len": 8, "max": 255,                                   "unit": "scalar" }, "name": "0x22E001 raw byte 5"},
+    {"id": "STINGER_22E001_BOOST_EST",  "path": "Engine",     "fmt": {"bix": 64, "len": 8, "max": 20,  "mul": 0.050804, "add": 0.216761, "unit": "psi"    }, "name": "Estimated turbo boost from 0x22E001 byte 6 (high confidence)"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "E002"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_22E002_RAW_01", "path": "ECU.Raw", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 1"},
+    {"id": "STINGER_22E002_RAW_02", "path": "ECU.Raw", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 2"},
+    {"id": "STINGER_22E002_RAW_03", "path": "ECU.Raw", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 3"},
+    {"id": "STINGER_22E002_RAW_04", "path": "ECU.Raw", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 4"},
+    {"id": "STINGER_22E002_RAW_05", "path": "ECU.Raw", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 5"},
+    {"id": "STINGER_22E002_RAW_06", "path": "ECU.Raw", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E002 raw byte 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "E004"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_22E004_RAW_01", "path": "ECU.Raw", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 1"},
+    {"id": "STINGER_22E004_RAW_02", "path": "ECU.Raw", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 2"},
+    {"id": "STINGER_22E004_RAW_03", "path": "ECU.Raw", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 3"},
+    {"id": "STINGER_22E004_RAW_04", "path": "ECU.Raw", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 4"},
+    {"id": "STINGER_22E004_RAW_05", "path": "ECU.Raw", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 5"},
+    {"id": "STINGER_22E004_RAW_06", "path": "ECU.Raw", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E004 raw byte 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "E00A"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_22E00A_RAW_01", "path": "ECU.Raw", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 1"},
+    {"id": "STINGER_22E00A_RAW_02", "path": "ECU.Raw", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 2"},
+    {"id": "STINGER_22E00A_RAW_03", "path": "ECU.Raw", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 3"},
+    {"id": "STINGER_22E00A_RAW_04", "path": "ECU.Raw", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 4"},
+    {"id": "STINGER_22E00A_RAW_05", "path": "ECU.Raw", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 5"},
+    {"id": "STINGER_22E00A_RAW_06", "path": "ECU.Raw", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "0x22E00A raw byte 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "F190"}, "freq": 60,
+  "signals": [
+    {"id": "STINGER_VIN_CHAR_01", "path": "Details", "fmt": {            "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 01 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_02", "path": "Details", "fmt": {"bix": 8,   "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 02 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_03", "path": "Details", "fmt": {"bix": 16,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 03 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_04", "path": "Details", "fmt": {"bix": 24,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 04 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_05", "path": "Details", "fmt": {"bix": 32,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 05 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_06", "path": "Details", "fmt": {"bix": 40,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 06 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_07", "path": "Details", "fmt": {"bix": 48,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 07 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_08", "path": "Details", "fmt": {"bix": 56,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 08 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_09", "path": "Details", "fmt": {"bix": 64,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 09 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_10", "path": "Details", "fmt": {"bix": 72,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 10 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_11", "path": "Details", "fmt": {"bix": 80,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 11 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_12", "path": "Details", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 12 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_13", "path": "Details", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 13 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_14", "path": "Details", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 14 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_15", "path": "Details", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 15 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_16", "path": "Details", "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 16 (ASCII code)"},
+    {"id": "STINGER_VIN_CHAR_17", "path": "Details", "fmt": {"bix": 128, "len": 8, "max": 255, "unit": "scalar" }, "name": "VIN character 17 (ASCII code)"}
   ]}
 ]
 }

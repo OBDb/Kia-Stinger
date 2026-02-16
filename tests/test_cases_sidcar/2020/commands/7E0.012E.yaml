@@ -1,0 +1,71 @@
+command_id: 7E0.012E
+test_cases:
+- response: 7E803412E18
+  expected_values:
+    EVAP_PCT: 9.41176
+- response: 7E803412E1A
+  expected_values:
+    EVAP_PCT: 10.19608
+- response: 7E803412E17
+  expected_values:
+    EVAP_PCT: 9.01961
+- response: 7E803412E16
+  expected_values:
+    EVAP_PCT: 8.62745
+- response: 7E803412E1D
+  expected_values:
+    EVAP_PCT: 11.37255
+- response: 7E803412E24
+  expected_values:
+    EVAP_PCT: 14.11765
+- response: 7E803412E22
+  expected_values:
+    EVAP_PCT: 13.33333
+- response: 7E803412E20
+  expected_values:
+    EVAP_PCT: 12.54902
+- response: 7E803412E1E
+  expected_values:
+    EVAP_PCT: 11.76471
+- response: 7E803412E33
+  expected_values:
+    EVAP_PCT: 20
+- response: 7E803412E32
+  expected_values:
+    EVAP_PCT: 19.60784
+- response: 7E803412E2B
+  expected_values:
+    EVAP_PCT: 16.86275
+- response: 7E803412E00
+  expected_values:
+    EVAP_PCT: 0
+- response: 7E803412E42
+  expected_values:
+    EVAP_PCT: 25.88235
+- response: 7E803412E3C
+  expected_values:
+    EVAP_PCT: 23.52941
+- response: 7E803412E3F
+  expected_values:
+    EVAP_PCT: 24.70588
+- response: 7E803412E51
+  expected_values:
+    EVAP_PCT: 31.76471
+- response: 7E803412E50
+  expected_values:
+    EVAP_PCT: 31.37255
+- response: 7E803412E4F
+  expected_values:
+    EVAP_PCT: 30.98039
+- response: 7E803412E4E
+  expected_values:
+    EVAP_PCT: 30.58824
+- response: 7E803412E49
+  expected_values:
+    EVAP_PCT: 28.62745
+- response: 7E803412E48
+  expected_values:
+    EVAP_PCT: 28.23529
+- response: 7E803412E47
+  expected_values:
+    EVAP_PCT: 27.84314

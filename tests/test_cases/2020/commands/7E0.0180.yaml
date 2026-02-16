@@ -1,0 +1,8 @@
+command_id: 7E0.0180
+test_cases:
+- response: 7E80641800004000D
+  expected_values:
+    STINGER_PID_0180_RAW_A: 0
+    STINGER_PID_0180_RAW_B: 4
+    STINGER_PID_0180_RAW_C: 0
+    STINGER_PID_0180_RAW_D: 13
