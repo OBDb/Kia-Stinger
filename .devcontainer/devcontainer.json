@@ -1,6 +1,7 @@
 {
     "name": "Python Development",
     "image": "ghcr.io/obdb/devcontainer:latest",
+    "runArgs": ["--platform=linux/amd64"],
     "customizations": {
         "vscode": {
             "extensions": [
