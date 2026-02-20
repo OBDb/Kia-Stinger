@@ -1,5 +1,5 @@
 { "commands": [
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear left door open?"},
     {"id": "STINGER_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front left door open?"},
@@ -14,7 +14,7 @@
     {"id": "STINGER_HOOD",           "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Hood latched?"},
     {"id": "STINGER_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "years": [2019] },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front right"},
     {"id": "STINGER_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front left "},
@@ -23,25 +23,25 @@
     {"id": "STINGER_BELT_RL",      "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
     {"id": "STINGER_BELT_RR",      "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
     {"id": "STINGER_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_DEFOG_LIGHT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "years": [2019, 2021], "from": 2024 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_TURN_L", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Left turn signal on? (raw >1)"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
     {"id": "STINGER_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "years": [2019] },
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
     {"id": "STINGER_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front left tire temperature"},
@@ -100,13 +100,13 @@
         }}
     }
   ]},
-{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
     {"id": "STINGER_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
     {"id": "STINGER_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "filter": { "to": 2018, "from": 2020 },
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "filter": { "from": 2018, "to": 2023 },
   "signals": [
     {"id": "STINGER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                     "unit": "liters"     }, "name": "Fuel level (volume)"},
     {"id": "STINGER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage"},
