@@ -17,7 +17,7 @@ test_cases:
     KIA_TURN_R: 0
   response: |-
     778100B62BC0800779C
-    7782184000E0100AAAA
+    7782184000E1100AAAA
 - expected_values:
     KIA_TURN_L: 0
     KIA_TURN_R: 0
