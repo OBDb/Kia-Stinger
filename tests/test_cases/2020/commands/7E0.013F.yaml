@@ -4,11 +4,11 @@ test_cases:
     CATEMP22: 160.9
   response: 7E804413F07D9
 - expected_values:
-    CATEMP22: 216.8
-  response: 7E804413F0A08
+    CATEMP22: 728.4
+  response: 7E804413F1E04
 - expected_values:
-    CATEMP22: 318
-  response: 7E804413F0DFC
+    CATEMP22: 779.9
+  response: 7E804413F2007
 - expected_values:
-    CATEMP22: 659
-  response: 7E804413F1B4E
+    CATEMP22: 804.5
+  response: 7E804413F20FD
