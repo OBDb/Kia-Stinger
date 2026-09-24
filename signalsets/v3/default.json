@@ -1,4 +1,402 @@
 { "commands": [
-
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "STINGER_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "STINGER_DOOR_FR",   "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "STINGER_HANDBRAKE", "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "STINGER_DOOR_RR",   "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "STINGER_DOOR_RL",   "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open?"},
+    {"id": "STINGER_BELT_PASS", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1, "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
+    {"id": "STINGER_BELT_DRIV", "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1, "unit": "noyes" }, "name": "Driver seatbelt latched?"},
+    {"id": "STINGER_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
+    {"id": "STINGER_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_GEAR_R",  "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "STINGER_LOCK_FL", "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "STINGER_LOCK_FR", "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "STINGER_BELT_RM", "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "STINGER_BELT_RL", "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "STINGER_BELT_RR", "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
+    {"id": "STINGER_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021] },
+  "signals": [
+    {"id": "STINGER_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_DEFOG_LIGHT", "path": "Lights", "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "offon" }, "name": "Defog light"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_TURN_R", "path": "Lights", "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "offon" }, "name": "Right turn signal on?"},
+    {"id": "STINGER_TURN_L", "path": "Lights", "fmt": {"bix": 38, "len": 1, "max": 1, "unit": "offon" }, "name": "Left turn signal on?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_HL_HIGH", "path": "Lights", "fmt": {"bix": 55, "len": 1, "max": 1, "unit": "offon" }, "name": "Headlight high beam"},
+    {"id": "STINGER_HL_LOW",  "path": "Lights", "fmt": {"bix": 63, "len": 1, "max": 1, "unit": "offon" }, "name": "Headlight low beam"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "STINGER_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Tire temperature front left",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "STINGER_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Tire pressure front right",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "STINGER_TT_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Tire temperature front right", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "STINGER_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Tire pressure rear right",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "STINGER_TT_RR", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Tire temperature rear right",  "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "STINGER_TP_RL", "path": "Tires", "fmt": {"bix": 128, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "STINGER_TT_RL", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Tire temperature rear left",   "suggestedMetric": "rearLeftTireTemperature"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
+    {"id": "STINGER_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
+    {"id": "STINGER_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021] },
+  "signals": [
+    {"id": "STINGER_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
+    {"id": "STINGER_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
+    {"id": "STINGER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage",    "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "STINGER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
+    {"id": "STINGER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_VSS_AVG",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Vehicle speed"},
+    {"id": "STINGER_FL_VSS",      "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 127,    "min": -128,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_FR_VSS",      "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 127,    "min": -128,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_RL_VSS",      "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 127,    "min": -128,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_RR_VSS",      "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 127,    "min": -128,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "STINGER_TC_SWITCH",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Wheel traction control switch"},
+    {"id": "STINGER_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "STINGER_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_VSS_AVG_V2",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Average wheel speed"},
+    {"id": "STINGER_TIRE_FL_VSS_V2", "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_TIRE_FR_VSS_V2", "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_TIRE_RR_VSS_V2", "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "STINGER_TIRE_RL_VSS_V2", "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_TC_SWITCH_V2",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Traction control switch"},
+    {"id": "STINGER_STEER_ANGLE_V2", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "STINGER_BRAKE_P_V2",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "4000"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_TIRE_FL_VSS_V3", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_TIRE_FR_VSS_V3", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_TIRE_RL_VSS_V3", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_TIRE_RR_VSS_V3", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "C101"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
+  "signals": [
+    {"id": "STINGER_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_STEER_ANGLE_V3", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "STINGER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
+    {"id": "STINGER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
+    {"id": "STINGER_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "STINGER_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
+    {"id": "STINGER_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
+    {"id": "STINGER_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
+    {"id": "STINGER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
+    {"id": "STINGER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
+  ]},
+{ "hdr": "7D6", "rax": "7DE", "dbg": true, "cmd": {"21": "06"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_FL_TP", "path": "Tires",  "fmt": {            "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "STINGER_FL_TT", "path": "Engine", "fmt": {"bix": 8,   "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "STINGER_FR_TP", "path": "Tires",  "fmt": {"bix": 32,  "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "STINGER_FR_TT", "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "STINGER_RL_TP", "path": "Tires",  "fmt": {"bix": 64,  "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "STINGER_RL_TT", "path": "Engine", "fmt": {"bix": 72,  "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "STINGER_RR_TP", "path": "Tires",  "fmt": {"bix": 96,  "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "STINGER_RR_TT", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
+    {"id": "STINGER_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
+    {"id": "STINGER_COOLANT_FAN_LOW_SPEED",  "path": "Movement", "fmt": {"bix": 170, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan low speed"},
+    {"id": "STINGER_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
+    {"id": "STINGER_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
+    {"id": "STINGER_MIS_2", "path": "Engine", "fmt": {"bix": 72,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
+    {"id": "STINGER_MIS_3", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
+    {"id": "STINGER_MIS_4", "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_OXYGEN_SENSOR_11",            "path": "Engine",   "fmt": {"bix": 32,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 1 bank 1"},
+    {"id": "STINGER_OXYGEN_SENSOR_21",            "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 2 bank 1"},
+    {"id": "STINGER_VSS_V2_7E0",                  "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 318.75,                      "mul": 1.25,                                 "unit": "kilometersPerHour" },                     "name": "Vehicle speed, v2",           "suggestedMetric": "speed"},
+    {"id": "STINGER_COMMANDED_EVAPORATIVE_PURGE", "path": "Engine",   "fmt": {"bix": 160, "len": 8,  "max": 99.609375,                   "mul": 0.390625,                             "unit": "percent"           },                     "name": "Commanded evaporative purge"},
+    {"id": "STINGER_FUEL_INJECTION_TIMING_1",     "path": "Fuel",     "fmt": {"bix": 176, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #1"},
+    {"id": "STINGER_FUEL_INJECTION_TIMING_2",     "path": "Fuel",     "fmt": {"bix": 192, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #2"},
+    {"id": "STINGER_FUEL_INJECTION_TIMING_3",     "path": "Fuel",     "fmt": {"bix": 208, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #3"},
+    {"id": "STINGER_FUEL_INJECTION_TIMING_4",     "path": "Fuel",     "fmt": {"bix": 224, "len": 16, "blsb": true,     "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_EXHAUST_GAS_T",                 "path": "Engine", "fmt": {"bix": 368, "len": 8,  "max": 1300.00000011,      "min": 99, "mul": 4.709803922,              "add": 99, "unit": "celsius"    }, "name": "Exhaust gas temperature"},
+    {"id": "STINGER_ODOMETER_AT_LAST_DPF_REGEN",    "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967.2949999999,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer at last DPF regeneration"},
+    {"id": "STINGER_DISTANCE_SINCE_LAST_DPF_REGEN", "path": "Trips",  "fmt": {"bix": 424, "len": 32, "max": 4294967.2949999999,                                "div": 1000,            "unit": "kilometers" }, "name": "Distance since last DPF regeneration"},
+    {"id": "STINGER_ODO",                           "path": "Trips",  "fmt": {"bix": 456, "len": 32, "max": 4294967.2949999999,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer",                             "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_COOLANT_FAN_HIGH_SPEED_1_8", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed, 1.8"},
+    {"id": "STINGER_COOLANT_FAN_LOW_SPEED_1_8",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed, 1.8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_DPF_REGENERATION_STATE", "path": "Engine", "fmt": {"bix": 207, "len": 1, "max": 1, "unit": "offon" }, "name": "Diesel particulate filter regeneration state"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_MAIN_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 96,  "len": 8,  "max": 100.000000065, "mul": 0.392156863, "unit": "liters" }, "name": "Main injection volume"},
+    {"id": "STINGER_PILOT_INJECTION_QTY", "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 65535,                             "unit": "liters" }, "name": "Pilot injection volume"},
+    {"id": "STINGER_POST_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 65535,                             "unit": "liters" }, "name": "Post injection volume"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0D"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
+    {"id": "STINGER_MIS_CNT_EMIS_2", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #2"},
+    {"id": "STINGER_MIS_CNT_EMIS_3", "path": "Engine.Misfires", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #3"},
+    {"id": "STINGER_MIS_CNT_EMIS_4", "path": "Engine.Misfires", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #4"},
+    {"id": "STINGER_MIS_CNT_1",      "path": "Engine.Misfires", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #1"},
+    {"id": "STINGER_MIS_CNT_2",      "path": "Engine.Misfires", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #2"},
+    {"id": "STINGER_MIS_CNT_3",      "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #3"},
+    {"id": "STINGER_MIS_CNT_4",      "path": "Engine.Misfires", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #4"},
+    {"id": "STINGER_MIS_CNT_ALL",    "path": "Engine.Misfires", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "13"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_TIMING_ADVANCE_1",    "path": "Engine", "fmt": {"bix": 32,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #1"},
+    {"id": "STINGER_TIMING_ADVANCE_2",    "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #2"},
+    {"id": "STINGER_TIMING_ADVANCE_3",    "path": "Engine", "fmt": {"bix": 48,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #3"},
+    {"id": "STINGER_TIMING_ADVANCE_4",    "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #4"},
+    {"id": "STINGER_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,                          "div": 2,               "unit": "kilopascal" }, "name": "Barometric pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_COMMANDED_THROTTLE_ACTUATOR",                 "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 99.609375,                "mul": 0.390625,                                              "unit": "percent" },                "name": "Commanded throttle actuator"},
+    {"id": "STINGER_THROTTLE_POSITION__1",                        "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "blsb": true,     "max": 799,    "min": -800,     "mul": 0.0244140625,           "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #1"},
+    {"id": "STINGER_THROTTLE_POSITION__2",                        "path": "Engine",   "fmt": {"bix": 64,  "len": 16, "blsb": true,     "max": 799,    "min": -800,     "mul": 0.0244140625,           "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #2"},
+    {"id": "STINGER_THROTTLE_POSITION_SENSOR_VOLTAGE__2",         "path": "Battery",  "fmt": {"bix": 80,  "len": 16, "blsb": true,     "max": 79,                      "mul": 0.0012207031,                                           "unit": "volts"   },                                             "name": "Throttle position sensor voltage #2"},
+    {"id": "STINGER_COOLANT_FAN",                                 "path": "Engine",   "fmt": {"bix": 96,  "len": 8,  "max": 100,                                                                                    "unit": "percent" },                "name": "Coolant"},
+    {"id": "STINGER_RELATIVE_ACCELERATOR_PEDAL_POSITION_VOLTAGE", "path": "Battery",  "fmt": {"bix": 112, "len": 16, "blsb": true,     "max": 6553.4, "min": -6553.6,                       "div": 5, "sign": true,                   "unit": "volts"   },                                             "name": "Relative accelerator pedal position voltage"},
+    {"id": "STINGER_RELATIVE_ACCELERATOR_PEDAL_POSITION",         "path": "Movement", "fmt": {"bix": 128, "len": 8,  "max": 99.609375,                "mul": 0.390625,                                              "unit": "percent" },                "name": "Relative accelerator pedal position"},
+    {"id": "STINGER_REQUESTED_TORQUE",                            "path": "Engine",   "fmt": {"bix": 176, "len": 16, "max": 100.00641,                "mul": 0.001526,                                              "unit": "percent" },                "name": "Requested torque"},
+    {"id": "STINGER_THROTTLE_POSITION_SENSOR_VOLTAGE__1",         "path": "Battery",  "fmt": {"bix": 360, "len": 16, "blsb": true,     "max": 79,                      "mul": 0.0012207031,                                           "unit": "volts"   },                                             "name": "Throttle position sensor voltage #1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "15"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_STFT_B1_IDLE", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "blsb": true, "max": 100,       "mul": 0.046875,                  "sign": true, "unit": "percent" }, "name": "Short term fuel % trim, bank 1 idle"},
+    {"id": "STINGER_STFT_B1",      "path": "Fuel", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 99.996947, "mul": 0.0030517578, "add": -100,               "unit": "percent" }, "name": "Short term fuel % trim, bank 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "16"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_KNOCK_RETARD_CYLINDER_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #1"},
+    {"id": "STINGER_KNOCK_RETARD_CYLINDER_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #2"},
+    {"id": "STINGER_KNOCK_RETARD_CYLINDER_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #3"},
+    {"id": "STINGER_KNOCK_RETARD_CYLINDER_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "17"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_INTAKE_CAMSHAFT_POSITION_COMMANDED", "path": "Engine", "fmt": {"bix": 32, "len": 8,  "max": 63.5,  "min": -64,                      "div": 2,             "sign": true,               "unit": "degrees" },                "name": "Intake camshaft position commanded"},
+    {"id": "STINGER_INTAKE_CAMSHAFT_POSITION_ACTUAL",    "path": "Engine", "fmt": {"bix": 40, "len": 16, "blsb": true, "max": 255.9921875, "min": -256,           "div": 128,               "sign": true,                   "unit": "degrees" },                                            "name": "Intake camshaft position actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "18"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_CVVT_T", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "min": -48, "add": -48, "unit": "celsius" }, "name": "Variable valve timing temperature", "description": "Continuously variable valve timing temperature."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "1B"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_DPF_DIFFERENTIAL_PRESSURE", "path": "Engine", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "1D"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_MIS_1_7E0", "path": "Engine.Misfires", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
+    {"id": "STINGER_MIS_2_7E0", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
+    {"id": "STINGER_MIS_3_7E0", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"},
+    {"id": "STINGER_MIS_4_7E0", "path": "Engine.Misfires", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 4"},
+    {"id": "STINGER_MIS_CAT_1", "path": "Engine.Misfires", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 1"},
+    {"id": "STINGER_MIS_CAT_2", "path": "Engine.Misfires", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 2"},
+    {"id": "STINGER_MIS_CAT_3", "path": "Engine.Misfires", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 3"},
+    {"id": "STINGER_MIS_CAT_4", "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
+  "signals": [
+    {"id": "STINGER_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": {  },
+  "signals": [
+    {"id": "STINGER_IAT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "STINGER_EOT", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": {  },
+  "signals": [
+    {"id": "STINGER_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
+    {"id": "STINGER_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
+    {"id": "STINGER_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
+    {"id": "STINGER_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "dbgfilter": {  },
+  "signals": [
+    {"id": "STINGER_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100, "unit": "scalar"  }, "name": "Unknown"},
+    {"id": "STINGER_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge"},
+    {"id": "STINGER_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of health"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
+  "signals": [
+    {"id": "STINGER_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
+    {"id": "STINGER_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
+    {"id": "STINGER_GDI_IT_A3", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 3"},
+    {"id": "STINGER_GDI_IT_A4", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 4"},
+    {"id": "STINGER_GDI_IT_B1", "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 1"},
+    {"id": "STINGER_GDI_IT_B2", "path": "Engine", "fmt": {"bix": 368, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 2"},
+    {"id": "STINGER_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
+    {"id": "STINGER_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": {  },
+  "signals": [
+    {"id": "STINGER_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 1"},
+    {"id": "STINGER_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 2"},
+    {"id": "STINGER_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 3"},
+    {"id": "STINGER_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 4"},
+    {"id": "STINGER_KNOCK_LEARN_1",  "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 1"},
+    {"id": "STINGER_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 2"},
+    {"id": "STINGER_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 3"},
+    {"id": "STINGER_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00D"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "STINGER_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "STINGER_MISFIRES_C3_CUR",                                "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "STINGER_MISFIRES_C4_CUR",                                "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
+    {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021] },
+  "signals": [
+    {"id": "STINGER_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
+    {"id": "STINGER_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
+    {"id": "STINGER_KNOCK_RETARD_3_E019", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
+    {"id": "STINGER_KNOCK_RETARD_4_E019", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": {  },
+  "signals": [
+    {"id": "STINGER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost gauge pressure"},
+    {"id": "STINGER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "STINGER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "STINGER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "STINGER_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate set point"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "STINGER_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 251, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A0"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_VSS_V3", "path": "Movement",     "fmt": {"bix": 48,  "len": 8, "max": 255,                         "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "STINGER_ATF_T",  "path": "Transmission", "fmt": {"bix": 104, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius"           }, "name": "Automatic transmission fluid temperature"},
+    {"id": "STINGER_GEAR", "path": "Transmission", "name": "Current gear", "description": "The automatic transmission gear.", "fmt": {"bix": 152, "len": 8, "map": {
+          "1": { "description": "Neutral", "value": "NEUTRAL" },
+          "2": { "description": "Reverse", "value": "REVERSE" },
+          "3": { "description": "Park",    "value": "PARK" },
+          "4": { "description": "Manual",  "value": "MANUAL" }
+        }}
+    }
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021] },
+  "signals": [
+    {"id": "STINGER_RPM_7E1",               "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "STINGER_VSS_7E1",               "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "STINGER_REL_APP",               "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "STINGER_TURBINE_SPEED",         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "STINGER_OUTPUT_SPEED",          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "STINGER_ATF_T_7E1",             "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "STINGER_TORQUE_CONVERTER_SLIP", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "STINGER_GEAR_7E1",              "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear selector"},
+    {"id": "STINGER_CURRENT_GEAR",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "STINGER_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "STINGER_BRAKE_PEDAL",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A4"}, "freq": 1,
+  "signals": [
+    {"id": "STINGER_GEAR_CUR",   "path": "Transmission", "fmt": {"bix": 188, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Current gear"},
+    {"id": "STINGER_GEAR_NXT",   "path": "Transmission", "fmt": {"bix": 196, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Next gear"},
+    {"id": "STINGER_CLUTCH_1_T", "path": "Transmission", "fmt": {"bix": 232, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #1 temperature", "description": "Part of the dual clutch transition"},
+    {"id": "STINGER_CLUTCH_2_T", "path": "Transmission", "fmt": {"bix": 248, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #2 temperature", "description": "Part of the dual clutch transition"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_VSS_V2", "path": "Movement", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 180, "min": -180, "div": 100, "sign": true, "unit": "milesPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2021 },
+  "signals": [
+    {"id": "STINGER_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
+  ]},
+{ "hdr": "7E5", "dbg": true, "cmd": {"21": "C0"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_RPM",                     "path": "Engine",   "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                         "div": 4,               "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "STINGER_VSS_AWD",                 "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Vehicle speed",                       "suggestedMetric": "speed"},
+    {"id": "STINGER_APP_REL_AWD",             "path": "Control",  "fmt": {"bix": 56,  "len": 8,  "max": 100,                  "mul": 100, "div": 255,             "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "STINGER_SUPPLY_VOLTAGE",          "path": "Battery",  "fmt": {"bix": 64,  "len": 8,  "max": 25.5,                             "div": 10,              "unit": "volts"             }, "name": "Supply voltage"},
+    {"id": "STINGER_SYSTEM_VOLTAGE",          "path": "Battery",  "fmt": {"bix": 72,  "len": 8,  "max": 25.5,                             "div": 10,              "unit": "volts"             }, "name": "System voltage"},
+    {"id": "STINGER_COMMANDED_TORQUE",        "path": "Engine",   "fmt": {"bix": 80,  "len": 8,  "max": 2550,                 "mul": 10,                          "unit": "newtonMeters"      }, "name": "Commanded torque"},
+    {"id": "STINGER_CLUTCH_SOLENOID_DUTY",    "path": "Engine",   "fmt": {"bix": 88,  "len": 8,  "max": 255,                                                      "unit": "percent"           }, "name": "Clutch solenoid duty"},
+    {"id": "STINGER_HEAT",                    "path": "Engine",   "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                      "unit": "celsius"           }, "name": "Heat"},
+    {"id": "STINGER_FRONT_RIGHT_WHEEL_SPEED", "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_FRONT_LEFT_WHEEL_SPEED",  "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_REAR_RIGHT_WHEEL_SPEED",  "path": "Movement", "fmt": {"bix": 120, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "STINGER_REAR_LEFT_WHEEL_SPEED",   "path": "Movement", "fmt": {"bix": 128, "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_LOCK_SWITCH",             "path": "Engine",   "fmt": {"bix": 151, "len": 1,  "max": 1,                                                        "unit": "offon"             }, "name": "Lock switch"},
+    {"id": "STINGER_STEERING_WHEEL_ANGLE",    "path": "Tires",    "fmt": {"bix": 160, "len": 8,  "max": 167,      "min": -88,                         "add": -88, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "STINGER_MALFUNCTION_INDICATOR",   "path": "Engine",   "fmt": {"bix": 175, "len": 1,  "max": 1,                                                        "unit": "offon"             }, "name": "Malfunction indicator"},
+    {"id": "STINGER_PRESSURE_SENSOR",         "path": "Engine",   "fmt": {"bix": 176, "len": 8,  "max": 63.75,                            "div": 4,               "unit": "bars"              }, "name": "Pressure sensor"}
+  ]},
+{ "hdr": "7E7", "rax": "7EF", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "STINGER_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "STINGER_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "STINGER_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "STINGER_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]}
 ]
 }
