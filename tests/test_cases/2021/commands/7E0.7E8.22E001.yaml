@@ -1,6 +1,7 @@
 command_id: 7E0.7E8.22E001
 test_cases:
 - expected_values:
+    STINGER_BATTERY_SOC: 59
     STINGER_EOT: 71.25298
     STINGER_IAT: 42.00225
   response: |-
@@ -12,6 +13,7 @@ test_cases:
     7E8253401789F640000
     7E82680272F0AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 93.75354
     STINGER_IAT: 41.25223
   response: |-
@@ -23,6 +25,7 @@ test_cases:
     7E825350177BD640000
     7E826A00C0000AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 98.25366
     STINGER_IAT: 44.25231
   response: |-
@@ -34,6 +37,7 @@ test_cases:
     7E8251F017BC3640000
     7E8266021D907AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 99.00368
     STINGER_IAT: 45.00233
   response: |-
@@ -45,6 +49,7 @@ test_cases:
     7E8251C017CC4640000
     7E826A0209007AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 98.25366
     STINGER_IAT: 44.25231
   response: |-
@@ -56,6 +61,7 @@ test_cases:
     7E82520017BC3640000
     7E826A0225308AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 96.0036
     STINGER_IAT: 44.25231
   response: |-
@@ -67,6 +73,7 @@ test_cases:
     7E82523017BC0640000
     7E82660223B08AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 99.00368
     STINGER_IAT: 42.00225
   response: |-
@@ -78,6 +85,7 @@ test_cases:
     7E825300178C4640000
     7E826E0210A08AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 76
     STINGER_EOT: 98.25366
     STINGER_IAT: 43.50229
   response: |-
@@ -89,6 +97,7 @@ test_cases:
     7E82524017AC3640000
     7E82640239008AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 59
     STINGER_EOT: 24.75182
     STINGER_IAT: 13.50154
   response: |-
@@ -100,6 +109,7 @@ test_cases:
     7E82539025261640000
     7E8266026C109AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 51.75249
     STINGER_IAT: 13.50154
   response: |-
@@ -111,6 +121,7 @@ test_cases:
     7E8253D025285640000
     7E826C0258409AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 59
     STINGER_EOT: 20.25171
     STINGER_IAT: 14.25156
   response: |-
@@ -122,6 +133,7 @@ test_cases:
     7E8253602535B640000
     7E826002A240BAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 56
     STINGER_EOT: 15.00158
     STINGER_IAT: 6.00135
   response: |-
@@ -133,6 +145,7 @@ test_cases:
     7E8258C024854640000
     7E8268029F30AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 51
     STINGER_EOT: 15.00158
     STINGER_IAT: 6.75137
   response: |-
@@ -144,6 +157,7 @@ test_cases:
     7E82580024954640000
     7E826C0290B0BAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 21.00173
     STINGER_IAT: 8.25141
   response: |-
@@ -155,6 +169,7 @@ test_cases:
     7E82572024B5C640000
     7E826E027540AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 51
     STINGER_EOT: 24.75182
     STINGER_IAT: 6.75137
   response: |-
@@ -166,6 +181,7 @@ test_cases:
     7E8257E024961640000
     7E826E027540AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 51
     STINGER_EOT: 30.00195
     STINGER_IAT: 7.50139
   response: |-
@@ -177,6 +193,7 @@ test_cases:
     7E8257C024A68640000
     7E826C027480AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 17.25163
     STINGER_IAT: 12.0015
   response: |-
@@ -188,6 +205,7 @@ test_cases:
     7E8254B025057640000
     7E826002A240BAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 33.75204
     STINGER_IAT: 6.75137
   response: |-
@@ -199,6 +217,7 @@ test_cases:
     7E8258002496D640000
     7E826804DAE18AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 29.25193
     STINGER_IAT: 8.25141
   response: |-
@@ -210,6 +229,7 @@ test_cases:
     7E82571024B67640000
     7E8264028790AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 36.75212
     STINGER_IAT: 12.75152
   response: |-
@@ -221,6 +241,7 @@ test_cases:
     7E82545025171640000
     7E826802A540BAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 42.00225
     STINGER_IAT: 18.75167
   response: |-
@@ -232,6 +253,7 @@ test_cases:
     7E82504025978640000
     7E82660256009AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 56.25261
     STINGER_IAT: 16.50161
   response: |-
@@ -243,6 +265,7 @@ test_cases:
     7E8251A02568B640000
     7E8260027FF09AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 24.75182
     STINGER_IAT: 19.50169
   response: |-
@@ -254,6 +277,7 @@ test_cases:
     7E825FA015A61640000
     7E8264028790AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 53
     STINGER_EOT: 51.75249
     STINGER_IAT: 12.0015
   response: |-
@@ -265,6 +289,7 @@ test_cases:
     7E8254D025085640000
     7E826C0242309AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 96.0036
     STINGER_IAT: 39.75219
   response: |-
@@ -276,6 +301,7 @@ test_cases:
     7E825400175C0640000
     7E826C01F3A07AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 95.25358
     STINGER_IAT: 37.50214
   response: |-
@@ -287,6 +313,7 @@ test_cases:
     7E825570172BF640000
     7E826E020A807AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 92.25351
     STINGER_IAT: 49.50244
   response: |-
@@ -298,6 +325,7 @@ test_cases:
     7E825FD0082BB640000
     7E82640206B07AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 56
     STINGER_EOT: 35.25208
     STINGER_IAT: 4.50131
   response: |-
@@ -309,6 +337,7 @@ test_cases:
     7E8259B02466F640000
     7E8268029F30AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 56
     STINGER_EOT: 45.75234
     STINGER_IAT: 5.25133
   response: |-
@@ -320,6 +349,7 @@ test_cases:
     7E8259202477D640000
     7E826E026F209AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 59
     STINGER_EOT: 48.75242
     STINGER_IAT: 9.75144
   response: |-
@@ -331,6 +361,7 @@ test_cases:
     7E82565024D81640000
     7E8264028790AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 52
     STINGER_EOT: 14.25156
     STINGER_IAT: 12.75152
   response: |-
@@ -342,6 +373,7 @@ test_cases:
     7E82545025153640000
     7E826E029170BAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 96.75362
     STINGER_IAT: 47.25238
   response: |-
@@ -353,6 +385,7 @@ test_cases:
     7E82509017FC1640000
     7E826601F1607AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 54
     STINGER_EOT: 45.00233
     STINGER_IAT: 36.0021
   response: |-
@@ -364,6 +397,7 @@ test_cases:
     7E8255F01707C640000
     7E826E0259109AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 55
     STINGER_EOT: 54.00255
     STINGER_IAT: 12.0015
   response: |-
@@ -375,6 +409,7 @@ test_cases:
     7E8254A025088640000
     7E8264027170AAAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 53
     STINGER_EOT: 75.75309
     STINGER_IAT: 14.25156
   response: |-
@@ -386,6 +421,7 @@ test_cases:
     7E825300253A5640000
     7E826C043F614AAAAAA
 - expected_values:
+    STINGER_BATTERY_SOC: 60
     STINGER_EOT: 65.25283
     STINGER_IAT: 24.75182
   response: |-
