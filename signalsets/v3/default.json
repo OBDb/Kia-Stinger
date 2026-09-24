@@ -57,9 +57,11 @@
   ]},
 { "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "STINGER_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
-    {"id": "STINGER_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
-    {"id": "STINGER_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+    {"id": "STINGER_TEMP_INT",            "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,   "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
+    {"id": "STINGER_TEMP_EXT",            "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,   "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
+    {"id": "STINGER_HVAC_EVAPORATOR_T",   "path": "Climate",  "fmt": {"bix": 56,  "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Evaporator temperature"},
+    {"id": "STINGER_HVAC_DEFOG_HUMIDITY", "path": "Climate",  "fmt": {"bix": 200, "len": 8, "max": 100,                                    "unit": "percent"           }, "name": "Humidity sensor for automatic defogger"},
+    {"id": "STINGER_VSS",                 "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                    "unit": "kilometersPerHour" }, "name": "Vehicle speed",                          "suggestedMetric": "speed"}
   ]},
 { "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021] },
   "signals": [
@@ -115,14 +117,15 @@
   ]},
 { "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "STINGER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
-    {"id": "STINGER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
-    {"id": "STINGER_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
-    {"id": "STINGER_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
-    {"id": "STINGER_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
-    {"id": "STINGER_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
-    {"id": "STINGER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
-    {"id": "STINGER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
+    {"id": "STINGER_BMS_SOC",            "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                 "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
+    {"id": "STINGER_BMS_CHG_PWR",        "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,              "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
+    {"id": "STINGER_BMS_DISCHG_PWR",     "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,              "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "STINGER_MDPS_MOTOR_CURRENT", "path": "Engine",  "fmt": {"bix": 88,  "len": 8,  "max": 127,    "min": -128,             "sign": true, "unit": "amps"      }, "name": "Motor-driven power steering current"},
+    {"id": "STINGER_BMS_MIN_TEMP",       "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,              "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
+    {"id": "STINGER_BMS_MOD1_TEMP",      "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,              "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
+    {"id": "STINGER_BMS_MOD2_TEMP",      "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,              "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
+    {"id": "STINGER_BMS_MOD3_TEMP",      "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,              "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
+    {"id": "STINGER_BMS_MOD4_TEMP",      "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,              "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
   ]},
 { "hdr": "7D6", "rax": "7DE", "dbg": true, "cmd": {"21": "06"}, "freq": 1,
   "signals": [
@@ -257,8 +260,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": {  },
   "signals": [
-    {"id": "STINGER_IAT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
-    {"id": "STINGER_EOT", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
+    {"id": "STINGER_BATTERY_V",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                                "unit": "volts"   }, "name": "Battery voltage"},
+    {"id": "STINGER_BATTERY_V_AFTER_IGNITION", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                                "unit": "volts"   }, "name": "Battery voltage after ignition"},
+    {"id": "STINGER_BATTERY_SOC",              "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 255,                                                 "nullmax": 255, "unit": "percent" }, "name": "12V battery state of charge"},
+    {"id": "STINGER_IAT",                      "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,                 "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "STINGER_EOT",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,                 "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": {  },
   "signals": [
