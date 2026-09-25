@@ -12,7 +12,7 @@
     {"id": "STINGER_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
     {"id": "STINGER_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 2, "dbgfilter": { "years": [2019] },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 0.25, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "STINGER_GEAR_R",  "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
     {"id": "STINGER_LOCK_FL", "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
@@ -26,7 +26,7 @@
     {"id": "STINGER_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
     {"id": "STINGER_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021] },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021] },
   "signals": [
     {"id": "STINGER_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
   ]},
@@ -55,7 +55,7 @@
     {"id": "STINGER_TP_RL", "path": "Tires", "fmt": {"bix": 128, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
     {"id": "STINGER_TT_RL", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Tire temperature rear left",   "suggestedMetric": "rearLeftTireTemperature"}
   ]},
-{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 5, "dbgfilter": { "years": [2019] },
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "STINGER_TEMP_INT",            "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,   "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
     {"id": "STINGER_TEMP_EXT",            "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,   "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
@@ -86,7 +86,7 @@
     {"id": "STINGER_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "STINGER_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "0104"}, "freq": 1,
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "0104"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_VSS_AVG_V2",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Average wheel speed"},
     {"id": "STINGER_TIRE_FL_VSS_V2", "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
@@ -97,7 +97,7 @@
     {"id": "STINGER_STEER_ANGLE_V2", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "STINGER_BRAKE_P_V2",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "4000"}, "freq": 1,
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "4000"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_TIRE_FL_VSS_V3", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "STINGER_TIRE_FR_VSS_V3", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
@@ -157,7 +157,7 @@
     {"id": "STINGER_MIS_3", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
     {"id": "STINGER_MIS_4", "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "02"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_OXYGEN_SENSOR_11",            "path": "Engine",   "fmt": {"bix": 32,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 1 bank 1"},
     {"id": "STINGER_OXYGEN_SENSOR_21",            "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 1.12855,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 2 bank 1"},
@@ -210,7 +210,7 @@
     {"id": "STINGER_TIMING_ADVANCE_4",    "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #4"},
     {"id": "STINGER_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,                          "div": 2,               "unit": "kilopascal" }, "name": "Barometric pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_COMMANDED_THROTTLE_ACTUATOR",                 "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 99.609375,                "mul": 0.390625,                                              "unit": "percent" },                "name": "Commanded throttle actuator"},
     {"id": "STINGER_THROTTLE_POSITION__1",                        "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "blsb": true,     "max": 799,    "min": -800,     "mul": 0.0244140625,           "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #1"},
@@ -343,7 +343,7 @@
   "signals": [
     {"id": "STINGER_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 251, "min": -4, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A0"}, "freq": 1,
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A0"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_VSS_V3", "path": "Movement",     "fmt": {"bix": 48,  "len": 8, "max": 255,                         "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
     {"id": "STINGER_ATF_T",  "path": "Transmission", "fmt": {"bix": 104, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius"           }, "name": "Automatic transmission fluid temperature"},
@@ -355,7 +355,7 @@
         }}
     }
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021] },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 0.25, "dbgfilter": { "to": 2018, "years": [2021] },
   "signals": [
     {"id": "STINGER_RPM_7E1",               "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "STINGER_VSS_7E1",               "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
@@ -369,7 +369,7 @@
     {"id": "STINGER_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
     {"id": "STINGER_BRAKE_PEDAL",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A4"}, "freq": 1,
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A4"}, "freq": 0.25,
   "signals": [
     {"id": "STINGER_GEAR_CUR",   "path": "Transmission", "fmt": {"bix": 188, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Current gear"},
     {"id": "STINGER_GEAR_NXT",   "path": "Transmission", "fmt": {"bix": 196, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Next gear"},
