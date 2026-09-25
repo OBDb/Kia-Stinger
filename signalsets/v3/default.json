@@ -138,7 +138,7 @@
     {"id": "STINGER_RR_TP", "path": "Tires",  "fmt": {"bix": 96,  "len": 8, "max": 3.5163276,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
     {"id": "STINGER_RR_TT", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 205,       "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
   ]},
-{ "hdr": "7E0", "cmd": {"01": "2F"}, "freq": 60, "dbgfilter": {  },
+{ "hdr": "7E0", "cmd": {"01": "2F"}, "freq": 60,
   "signals": [
     {"id": "FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
   ]},
@@ -262,7 +262,7 @@
   "signals": [
     {"id": "STINGER_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 2, "dbgfilter": {  },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 2,
   "signals": [
     {"id": "STINGER_BATTERY_V",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                                "unit": "volts"   }, "name": "Battery voltage"},
     {"id": "STINGER_BATTERY_V_AFTER_IGNITION", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                                "unit": "volts"   }, "name": "Battery voltage after ignition"},
@@ -270,7 +270,7 @@
     {"id": "STINGER_IAT",                      "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,                 "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "STINGER_EOT",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,                 "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": {  },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5,
   "signals": [
     {"id": "STINGER_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
     {"id": "STINGER_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
@@ -279,7 +279,7 @@
     {"id": "STINGER_INJ_DUR_5", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 5"},
     {"id": "STINGER_INJ_DUR_6", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "dbgfilter": {  },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5,
   "signals": [
     {"id": "STINGER_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100, "unit": "scalar"  }, "name": "Unknown"},
     {"id": "STINGER_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge"},
@@ -296,7 +296,7 @@
     {"id": "STINGER_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
     {"id": "STINGER_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": {  },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1,
   "signals": [
     {"id": "STINGER_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 1"},
     {"id": "STINGER_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 2"},
@@ -331,7 +331,7 @@
     {"id": "STINGER_KNOCK_RETARD_3_E019", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
     {"id": "STINGER_KNOCK_RETARD_4_E019", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": {  },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1,
   "signals": [
     {"id": "STINGER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost gauge pressure"},
     {"id": "STINGER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
