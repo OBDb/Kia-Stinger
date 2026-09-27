@@ -183,14 +183,6 @@
   "signals": [
     {"id": "FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
-  "signals": [
-    {"id": "STINGER_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
-    {"id": "STINGER_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
-    {"id": "STINGER_COOLANT_FAN_LOW_SPEED",  "path": "Movement", "fmt": {"bix": 170, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan low speed"},
-    {"id": "STINGER_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
-    {"id": "STINGER_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
-  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
   "signals": [
     {"id": "STINGER_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
@@ -371,10 +363,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "STINGER_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 3276.7,  "min": -3276.8,             "div": 10,             "sign": true,                   "unit": "amps"    },                                   "name": "Battery current"},
-    {"id": "STINGER_BAT_T",       "path": "Battery", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 16343.5, "min": -16424,              "div": 2,  "add": -40, "sign": true,                   "unit": "celsius" },                                   "name": "Battery temperature"},
-    {"id": "STINGER_CLT_FAN_PWM", "path": "Engine",  "fmt": {"bix": 88,  "len": 8,  "max": 100,                   "mul": 100,     "div": 255,                                      "unit": "percent" },                "name": "Coolant fan PWM"},
-    {"id": "STINGER_AC_P",        "path": "Engine",  "fmt": {"bix": 112, "len": 8,  "max": 3.52,                  "mul": 3.52,    "div": 255,                                      "unit": "unknown" },                "name": "Air conditioning pressure"}
+    {"id": "STINGER_CLT_FAN_PWM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 100,  "mul": 100,  "div": 255, "unit": "percent"    }, "name": "Coolant fan PWM"},
+    {"id": "STINGER_AC_P",        "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 3520, "mul": 3520, "div": 255, "unit": "kilopascal" }, "name": "Air conditioning pressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021] },
   "signals": [
