@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     FRP_ABS: 5170
   response: '7E80441590205'
+- expected_values:
+    FRP_ABS: 8680
+  response: '7E80441590364'
