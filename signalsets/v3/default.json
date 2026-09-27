@@ -5,16 +5,16 @@
   "commands": [
 { "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A1"}, "freq": 0.25,
   "signals": [
-    {"id": "STINGER_4WD_CLU_DUTY",      "path": "Engine", "fmt": {"bix": 72,  "len": 16, "max": 100,       "min": -3276.8,                     "div": 10, "sign": true, "unit": "percent"      }, "name": "4WD clutch duty"},
-    {"id": "STINGER_4WD_CLU_STRESS",    "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 63.993951, "min": -63.995904, "mul": 0.001953,            "sign": true, "unit": "percent"      }, "name": "4WD clutch stress"},
-    {"id": "STINGER_4WD_STEER_WHL_ANG", "path": "Tires",  "fmt": {"bix": 184, "len": 16, "max": 4095.875,  "min": -4096,                       "div": 8,  "sign": true, "unit": "degrees"      }, "name": "4WD steering wheel angle"},
-    {"id": "STINGER_4WD_CLU_TQ",        "path": "Engine", "fmt": {"bix": 200, "len": 16, "max": 2047.9375, "min": -2048,                       "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch torque"},
-    {"id": "STINGER_4WD_CLU_P",         "path": "Engine", "fmt": {"bix": 216, "len": 16, "max": 63.993951, "min": -63.995904, "mul": 0.001953,            "sign": true, "unit": "bars"         }, "name": "4WD clutch pressure"}
+    {"id": "STINGER_AWD_CLU_DUTY",      "path": "Engine", "fmt": {"bix": 72,  "len": 16, "max": 100,       "min": -3276.8,                     "div": 10, "sign": true, "unit": "percent"      }, "name": "4WD clutch duty"},
+    {"id": "STINGER_AWD_CLU_STRESS",    "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 63.993951, "min": -63.995904, "mul": 0.001953,            "sign": true, "unit": "percent"      }, "name": "4WD clutch stress"},
+    {"id": "STINGER_AWD_STEER_WHL_ANG", "path": "Tires",  "fmt": {"bix": 184, "len": 16, "max": 4095.875,  "min": -4096,                       "div": 8,  "sign": true, "unit": "degrees"      }, "name": "4WD steering wheel angle"},
+    {"id": "STINGER_AWD_CLU_TQ",        "path": "Engine", "fmt": {"bix": 200, "len": 16, "max": 2047.9375, "min": -2048,                       "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch torque"},
+    {"id": "STINGER_AWD_CLU_P",         "path": "Engine", "fmt": {"bix": 216, "len": 16, "max": 63.993951, "min": -63.995904, "mul": 0.001953,            "sign": true, "unit": "bars"         }, "name": "4WD clutch pressure"}
   ]},
 { "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A3"}, "freq": 0.25,
   "signals": [
-    {"id": "STINGER_4WD_FRONT_AXLE_RAT", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 0.999984,  "min": -1.000015, "mul": 2, "div": 65535, "sign": true, "unit": "scalar" }, "name": "4WD front axle ratio"},
-    {"id": "STINGER_4WD_AXLE_SPD_DIFF",  "path": "Movement", "fmt": {"bix": 144, "len": 16, "max": 2047.9375, "min": -2048,               "div": 16,    "sign": true, "unit": "rpm"    }, "name": "4WD delta speed between front and rear axle"}
+    {"id": "STINGER_AWD_FRONT_AXLE_RAT", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 0.999984,  "min": -1.000015, "mul": 2, "div": 65535, "sign": true, "unit": "scalar" }, "name": "4WD front axle ratio"},
+    {"id": "STINGER_AWD_AXLE_SPD_DIFF",  "path": "Movement", "fmt": {"bix": 144, "len": 16, "max": 2047.9375, "min": -2048,               "div": 16,    "sign": true, "unit": "rpm"    }, "name": "4WD delta speed between front and rear axle"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -371,7 +371,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 5,
   "signals": [
-    {"id": "STINGER_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 3276.7,  "min": -3276.8,             "div": 10,             "sign": true,                   "unit": "amps"    },                                   "name": "Battery, current"},
+    {"id": "STINGER_BAT_CURRENT", "path": "Battery", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 3276.7,  "min": -3276.8,             "div": 10,             "sign": true,                   "unit": "amps"    },                                   "name": "Battery current"},
     {"id": "STINGER_BAT_T",       "path": "Battery", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 16343.5, "min": -16424,              "div": 2,  "add": -40, "sign": true,                   "unit": "celsius" },                                   "name": "Battery temperature"},
     {"id": "STINGER_CLT_FAN_PWM", "path": "Engine",  "fmt": {"bix": 88,  "len": 8,  "max": 100,                   "mul": 100,     "div": 255,                                      "unit": "percent" },                "name": "Coolant fan PWM"},
     {"id": "STINGER_AC_P",        "path": "Engine",  "fmt": {"bix": 112, "len": 8,  "max": 3.52,                  "mul": 3.52,    "div": 255,                                      "unit": "unknown" },                "name": "Air conditioning pressure"}
@@ -433,11 +433,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED01"}, "freq": 5,
   "signals": [
-    {"id": "STINGER_AC_RELAY",             "path": "Engine",   "fmt": {"bix": 101, "len": 1, "max": 1,                                                           "unit": "offon"        }, "name": "Air conditioning relay"},
-    {"id": "STINGER_ENG_CLT_FAN_LOW_SPD",  "path": "Movement", "fmt": {"bix": 176, "len": 8, "max": 100,                  "mul": 100,    "div": 255,             "unit": "percent"      }, "name": "Engine coolant fan low speed"},
-    {"id": "STINGER_ENG_CLT_FAN_HIGH_SPD", "path": "Movement", "fmt": {"bix": 184, "len": 8, "max": 255,                                                         "unit": "scalar"       }, "name": "Engine coolant fan high speed, on/off"},
-    {"id": "STINGER_FUEL_T",               "path": "Fuel",     "fmt": {"bix": 216, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843,             "add": -50, "unit": "celsius"      }, "name": "Fuel temperature"},
-    {"id": "STINGER_ENG_ACT_TQ",           "path": "Engine",   "fmt": {"bix": 240, "len": 8, "max": 599.9895,             "mul": 2.3529,                         "unit": "newtonMeters" }, "name": "Engine, actual torque"}
+    {"id": "STINGER_AC_RELAY",                 "path": "Engine",   "fmt": {"bix": 101, "len": 1, "max": 1,                                                           "unit": "offon"        }, "name": "Air conditioning relay"},
+    {"id": "STINGER_ENG_CLT_FAN_LOW_SPD",      "path": "Movement", "fmt": {"bix": 176, "len": 8, "max": 100,                  "mul": 100,    "div": 255,             "unit": "percent"      }, "name": "Engine coolant fan low speed"},
+    {"id": "STINGER_ENG_CLT_FAN_HIGH_SPD_OFF", "path": "Movement", "fmt": {"bix": 184, "len": 8, "max": 255,                                                         "unit": "scalar"       }, "name": "Engine coolant fan high speed, on/off"},
+    {"id": "STINGER_FUEL_T",                   "path": "Fuel",     "fmt": {"bix": 216, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843,             "add": -50, "unit": "celsius"      }, "name": "Fuel temperature"},
+    {"id": "STINGER_ENG_ACT_TQ",               "path": "Engine",   "fmt": {"bix": 240, "len": 8, "max": 599.9895,             "mul": 2.3529,                         "unit": "newtonMeters" }, "name": "Engine, actual torque"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
@@ -445,14 +445,14 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED03"}, "freq": 30,
   "signals": [
-    {"id": "STINGER_EXH_T_1_UP_OXICAT",   "path": "Engine", "fmt": {"bix": 296, "len": 8,  "max": 1299.999,           "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 1, upstream of oxidation catalyst"},
-    {"id": "STINGER_EXH_T_2_UP_DPF",      "path": "Engine", "fmt": {"bix": 304, "len": 8,  "max": 1299.999,           "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 2, upstream of DPF"},
-    {"id": "STINGER_DPF_ODO_LAST",        "path": "Trips",  "fmt": {"bix": 328, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter odometer at last regeneration"},
-    {"id": "STINGER_DPF_DIST_SINCE",      "path": "Trips",  "fmt": {"bix": 360, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter distance since last regeneration"},
-    {"id": "STINGER_ODO_7E0",             "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Odometer"},
-    {"id": "STINGER_DPF_REGEN_ST",        "path": "Engine", "fmt": {"bix": 431, "len": 1,  "max": 1,                                                         "unit": "offon"      }, "name": "Diesel particulate filter regeneration state"},
-    {"id": "STINGER_FUEL_CONS_SINCE_DPF", "path": "Fuel",   "fmt": {"bix": 432, "len": 8,  "max": 319.999499,         "mul": 1.2549,                         "unit": "liters"     }, "name": "Fuel consumption since last DPF regeneration"},
-    {"id": "STINGER_DPF_REGEN_CNT",       "path": "Engine", "fmt": {"bix": 440, "len": 8,  "max": 255,                                                       "unit": "scalar"     }, "name": "Diesel particulate filter regeneration count"}
+    {"id": "STINGER_EXH_T_1_UP_OXICAT",    "path": "Engine", "fmt": {"bix": 296, "len": 8,  "max": 1299.999,           "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 1, upstream of oxidation catalyst"},
+    {"id": "STINGER_EXH_T_2_UP_DPF",       "path": "Engine", "fmt": {"bix": 304, "len": 8,  "max": 1299.999,           "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 2, upstream of DPF"},
+    {"id": "STINGER_DPF_ODO_LAST_REGEN",   "path": "Trips",  "fmt": {"bix": 328, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter odometer at last regeneration"},
+    {"id": "STINGER_DPF_DIST_SINCE_REGEN", "path": "Trips",  "fmt": {"bix": 360, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter distance since last regeneration"},
+    {"id": "STINGER_ODO_7E0",              "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967.2949999999,                "div": 1000,            "unit": "kilometers" }, "name": "Odometer"},
+    {"id": "STINGER_DPF_REGEN_ST",         "path": "Engine", "fmt": {"bix": 431, "len": 1,  "max": 1,                                                         "unit": "offon"      }, "name": "Diesel particulate filter regeneration state"},
+    {"id": "STINGER_FUEL_CONS_SINCE_DPF",  "path": "Fuel",   "fmt": {"bix": 432, "len": 8,  "max": 319.999499,         "mul": 1.2549,                         "unit": "liters"     }, "name": "Fuel consumption since last DPF regeneration"},
+    {"id": "STINGER_DPF_REGEN_CNT",        "path": "Engine", "fmt": {"bix": 440, "len": 8,  "max": 255,                                                       "unit": "scalar"     }, "name": "Diesel particulate filter regeneration count"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED07"}, "freq": 5,
   "signals": [
