@@ -1,6 +1,21 @@
 command_id: 7A0.7A8.22C00B|fc=1
 test_cases:
 - expected_values:
+    STINGER_TP_FL: null
+    STINGER_TP_FR: null
+    STINGER_TP_RL: null
+    STINGER_TP_RR: null
+    STINGER_TT_FL: null
+    STINGER_TT_FR: null
+    STINGER_TT_RL: null
+    STINGER_TT_RR: null
+  response: |-
+    7A8102062C00BFFFFFF
+    7A82180000000020000
+    7A82200020000000200
+    7A823000002FB87AF87
+    7A824AF92BE92BEAAAA
+- expected_values:
     STINGER_TP_RR: 35.6
     STINGER_TT_RR: 0
   response: |-
