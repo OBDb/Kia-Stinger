@@ -4,3 +4,6 @@ test_cases:
     FUELSYS1: CL
     FUELSYS2: 'OFF'
   response: '7E80441030200'
+- expected_values:
+    FUELSYS2: 'OFF'
+  response: '7E80441034400'

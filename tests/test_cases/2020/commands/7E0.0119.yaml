@@ -5,6 +5,10 @@ test_cases:
     SHRTFT22: 71.21875
   response: 7E804411991FF
 - expected_values:
+    O2S22: 0.77
+    SHRTFT22: 71.21875
+  response: 7E80441199AFF
+- expected_values:
     O2S22: 0.815
     SHRTFT22: 71.21875
   response: 7E8044119A3FF
