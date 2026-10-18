@@ -4,7 +4,7 @@
     { "hdr": "7E1", "type": "transmission" }
   ],
   "commands": [
-{ "hdr": "740", "rax": "748", "cmd": {"22": "01A1"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "740", "rax": "748", "cmd": {"22": "01A1"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "STINGER_AWD_CLU_DUTY",      "path": "Engine", "fmt": {"bix": 72,  "len": 16, "max": 100,       "min": -3276.8,                  "div": 10, "sign": true, "unit": "percent"      }, "name": "4WD clutch duty"},
     {"id": "STINGER_AWD_CLU_STRESS",    "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "percent"      }, "name": "4WD clutch stress"},
@@ -410,7 +410,7 @@
     {"id": "STINGER_CYL5_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 392, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 5"},
     {"id": "STINGER_CYL6_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 408, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E0F1"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E0F1"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "STINGER_DPF_DIFF_P", "path": "Engine", "fmt": {"bix": 248, "len": 8, "max": 1000, "min": -100, "mul": 431.373, "div": 100, "add": -100, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
   ]},
