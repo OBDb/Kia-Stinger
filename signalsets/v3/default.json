@@ -12,7 +12,7 @@
     {"id": "STINGER_AWD_CLU_TQ",        "path": "Engine", "fmt": {"bix": 200, "len": 16, "max": 2047.9375, "min": -2048,                    "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch torque"},
     {"id": "STINGER_AWD_CLU_P",         "path": "Engine", "fmt": {"bix": 216, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "bars"         }, "name": "4WD clutch pressure"}
   ]},
-{ "hdr": "740", "rax": "748", "cmd": {"22": "01A3"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "740", "rax": "748", "cmd": {"22": "01A3"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "STINGER_AWD_FRONT_AXLE_RAT", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 0.999,     "min": -1,    "mul": 2, "div": 65535, "sign": true, "unit": "scalar" }, "name": "4WD front axle ratio"},
     {"id": "STINGER_AWD_AXLE_SPD_DIFF",  "path": "Movement", "fmt": {"bix": 144, "len": 16, "max": 2047.9375, "min": -2048,           "div": 16,    "sign": true, "unit": "rpm"    }, "name": "4WD delta speed between front and rear axle"}
@@ -358,7 +358,7 @@
     {"id": "STINGER_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
     {"id": "STINGER_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "STINGER_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
   ]},
