@@ -319,7 +319,7 @@
     {"id": "STINGER_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of charge"},
     {"id": "STINGER_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of health"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E005"}, "freq": 2, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E005"}, "freq": 2, "dbgfilter": { "to": 2018, "years": [2021], "from": 2023 },
   "signals": [
     {"id": "STINGER_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
     {"id": "STINGER_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
