@@ -110,7 +110,7 @@
     {"id": "STINGER_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
     {"id": "STINGER_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "years": [2019] },
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "STINGER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "unit": "liters"     }, "name": "Fuel level",         "suggestedMetric": "fuelTankLevel"},
     {"id": "STINGER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage",    "suggestedMetric": "starterBatteryVoltage"},
@@ -180,7 +180,7 @@
     {"id": "STINGER_RR_TP", "path": "Tires",  "fmt": {"bix": 96,  "len": 8, "max": 3.51,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
     {"id": "STINGER_RR_TT", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 205,  "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
   ]},
-{ "hdr": "7E0", "cmd": {"01": "2F"}, "freq": 60,
+{ "hdr": "7E0", "cmd": {"01": "2F"}, "freq": 1,
   "signals": [
     {"id": "FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
   ]},
