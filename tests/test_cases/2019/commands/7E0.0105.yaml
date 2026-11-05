@@ -33,13 +33,27 @@ test_cases:
     NO DATA
     7E803410576
 - expected_values:
+    ECT: 81
+  response: "7E8 03 41 05 79 \n7E9 03 41 05 79 "
+- expected_values:
+    ECT: 89
+  response: "7E8 03 41 05 81 \n7E9 03 41 05 81 "
+- expected_values:
     ECT: 91
   response: '7E8 03 41 05 83 '
+- expected_values:
+    ECT: 97
+  response: "7E8 03 41 05 89 \n7E9 03 41 05 89 "
 - expected_values:
     ECT: 55
   response: |-
     7E80341055F
     7E90341055F
+- expected_values:
+    ECT: 72
+  response: |-
+    7E803410570
+    7E903410570
 - expected_values:
     ECT: 84
   response: 7E80341057C
@@ -53,6 +67,12 @@ test_cases:
   response: |-
     7E80341058E
     7E90341058E
+- expected_values:
+    ECT: 78
+  response: "7E9 03 41 05 76 \n7E8 03 41 05 76 "
+- expected_values:
+    ECT: 86
+  response: "7E9 03 41 05 7E \n7E8 03 41 05 7E "
 - expected_values:
     ECT: 90
   response: '7E9 03 41 05 82 '

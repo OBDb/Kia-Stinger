@@ -12,11 +12,11 @@ test_cases:
 - expected_values:
     LOAD_PCT: 14.11765
   response: |-
-    7E803410425
+    7E803410424
     7E903410424
 - expected_values:
-    LOAD_PCT: 15.29412
-  response: "7E9 03 41 04 27 \n7E8 03 41 04 27 "
+    LOAD_PCT: 0
+  response: "7E9 03 41 04 00 \n7E8 03 41 04 00 "
 - expected_values:
     LOAD_PCT: 21.56863
   response: |-
