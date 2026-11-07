@@ -362,7 +362,7 @@
   "signals": [
     {"id": "STINGER_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "STINGER_CLT_FAN_PWM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 100,  "mul": 100,  "div": 255, "unit": "percent"    }, "name": "Coolant fan PWM"},
     {"id": "STINGER_AC_P",        "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 3520, "mul": 3520, "div": 255, "unit": "kilopascal" }, "name": "Air conditioning pressure"}
