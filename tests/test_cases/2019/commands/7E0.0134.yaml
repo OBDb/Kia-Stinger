@@ -5,6 +5,10 @@ test_cases:
     O2S11_CURRENT: -0.00781
   response: '000 06 41 34 80 30 7F FE '
 - expected_values:
+    LAMBDA11_CURRENT: 0.92523
+    O2S11_CURRENT: -0.29297
+  response: 000064134766E7FB5
+- expected_values:
     LAMBDA11_CURRENT: 0.96823
     O2S11_CURRENT: -0.12891
   response: "0134\n7E8 06 41 34 7B EF 7F DF "
@@ -36,6 +40,10 @@ test_cases:
     NO DATA
     7E80641347CCF7FE7
 - expected_values:
+    LAMBDA11_CURRENT: 0.89691
+    O2S11_CURRENT: -0.41797
+  response: '7E8 06 41 34 72 CE 7F 95 '
+- expected_values:
     LAMBDA11_CURRENT: 0.91449
     O2S11_CURRENT: -0.33984
   response: '7E8 06 41 34 75 0E 7F A9 '
@@ -48,17 +56,17 @@ test_cases:
     O2S11_CURRENT: -0.125
   response: '7E8 06 41 34 7C 0F 7F E0 '
 - expected_values:
-    LAMBDA11_CURRENT: 0.97604
-    O2S11_CURRENT: -0.09375
-  response: '7E8 06 41 34 7C EF 7F E8 '
+    LAMBDA11_CURRENT: 1.00342
+    O2S11_CURRENT: -0.00391
+  response: '7E8 06 41 34 80 70 7F FF '
 - expected_values:
     LAMBDA11_CURRENT: 1.00537
     O2S11_CURRENT: 0
   response: '7E8 06 41 34 80 B0 80 00 '
 - expected_values:
-    LAMBDA11_CURRENT: 1.01709
-    O2S11_CURRENT: 0.03125
-  response: '7E8 06 41 34 82 30 80 08 '
+    LAMBDA11_CURRENT: 1.99
+    O2S11_CURRENT: 2.38672
+  response: '7E8 06 41 34 FF FF 82 63 '
 - expected_values:
     LAMBDA11_CURRENT: 0.91058
     O2S11_CURRENT: -0.35547
