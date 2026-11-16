@@ -387,7 +387,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1,
   "signals": [
-    {"id": "STINGER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost gauge pressure"},
+    {"id": "STINGER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost gauge pressure", "suggestedMetric": "boostPressure"},
     {"id": "STINGER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                  "mul": 10,  "div": 65535,                                                   "unit": "volts"   }, "name": "Waste gate voltage"},
     {"id": "STINGER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,                 "mul": 200, "div": 65535,                                                   "unit": "percent" }, "name": "Waste gate duty"},
     {"id": "STINGER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
