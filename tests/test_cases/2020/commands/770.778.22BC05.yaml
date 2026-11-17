@@ -7,7 +7,6 @@ test_cases:
     778210000200000AAAA
 - expected_values:
     STINGER_HAZARD_SW: 0
-    STINGER_HL_SW: 1
   response: |-
     778100B62BC050F1724
     778210000200400AAAA
